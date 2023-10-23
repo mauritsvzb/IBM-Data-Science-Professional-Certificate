@@ -17,7 +17,7 @@ This course provides an introduction to the common programming languages used by
 ## 🏆 Certificates
 To verify the certificates, click the images to follow the links.
 
-[<img src="https://user-images.githubusercontent.com/13508894/277448317-3fa57728-8827-41ac-a148-ef3023e73133.png" width="550">](https://www.coursera.org/account/accomplishments/verify/4C6CQM7VXH2G)
+[<img src="https://user-images.githubusercontent.com/13508894/277462501-a312382f-9c4b-426b-b332-38de1ca2a470.png" width="550">](https://www.coursera.org/account/accomplishments/verify/4C6CQM7VXH2G)
 
 [<img src="https://user-images.githubusercontent.com/13508894/277461386-1dfb4186-c105-4471-97d4-50731947a326.png" width="430">](https://www.credly.com/badges/a6d4cc61-516f-4066-8e42-4191775d16c5/public_url)
 
