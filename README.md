@@ -1,4 +1,5 @@
 [![Visits Badge](https://badges.pufler.dev/visits/mauritsvzb/badge-it)](https://badges.pufler.dev)
+![Visitor Count](https://profile-counter.glitch.me/{mauritsvzb}/count.svg)
 
 
 
