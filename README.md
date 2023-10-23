@@ -1,3 +1,6 @@
+[![Visits Badge](https://badges.pufler.dev/visits/mauritsvzb/badge-it)](https://badges.pufler.dev)
+
+
 ![image](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/dc87e579-f72c-47ff-91fc-a348c5738932)
 
 # 📄 About
