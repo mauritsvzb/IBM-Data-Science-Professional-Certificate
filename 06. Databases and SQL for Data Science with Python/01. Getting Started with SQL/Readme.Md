@@ -42,7 +42,8 @@ SELECT COLUMN1, COLUMN2, ... from TABLE1 ;
 This will retrieve a subset of the columns (in this case `COLUMN1, COLUMN2`, and the order of the columns displayed always matches the order in the `SELECT` statement.
 
 ### Select All
-To retrieve all columns from the COUNTRY table we could use `*` instead of specifying individual column names: SELECT * from COUNTRY ;
+To retrieve all columns from the COUNTRY table we could use `*` instead of specifying individual column names: 
+`SELECT * from COUNTRY ;`
 
 ### Filtering Results
 The `WHERE` clause can be added to your query to filter results or get specific rows of data. To retrieve data for all rows in the `COUNTRY` table where the `ID` is less than 5:
