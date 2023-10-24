@@ -19,7 +19,7 @@ Will select names of employees with birth dates in the 1970s.
 Instead of writing something like
 ```
   SELECT title, pages from Book
-WHERE pages >=290 AND pages <=300 ;
+    WHERE pages >=290 AND pages <=300 ;
 ```
 the between and clause can be used, so it becomes:
 ```
@@ -75,4 +75,4 @@ SELECT DISTINCT(country)
 The `GROUP BY` clause groups a result into subsets that has matching values for one or more columns. In this example, countries are grouped and then counted using the count function.
 
 ## Restricting the Result Set - `HAVING` Clause
-To set a condition to a `GROUP BY` clause, we use the keyword HAVING. The HAVING clause is used in combination with the `GROUP BY` clause. It is very important to note that the `WHERE` clause is for the entire result set, but the `HAVING` clause works only with the GROUP BY clause.
+To set a condition to a `GROUP BY` clause, we use the keyword HAVING. The HAVING clause is used in combination with the `GROUP BY` clause. It is very important to note that the `WHERE` clause is for the entire result set, but the `HAVING` clause works only with the `GROUP BY` clause.
