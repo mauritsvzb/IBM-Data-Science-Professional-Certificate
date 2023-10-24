@@ -39,7 +39,7 @@ The following Python libraries were used throughout the certification:
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/79b21b95-d887-4a02-95e2-778caad67e16.jpeg" width="182" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/ecc0dcdf-318c-4d62-8940-2acec7249fb0.jpeg" width="134" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/ca504388-7f12-4ff9-a631-c7f242cc6dba.png" width="116" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bbac0c5c-29b8-473a-a3ce-87e399aab755.jpeg" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bbac0c5c-29b8-473a-a3ce-87e399aab755.jpeg" width="85" />
 
 # 📂 Projects
 * Extracting and Visualizing Stock Data
