@@ -41,6 +41,7 @@ CREATE TABLE table_name (
   ....
 );
 ```
+
 <img src="https://user-images.githubusercontent.com/13508894/277741820-20d01cd3-f078-4afa-bdf6-4e7cf68a5f29.png" width="500" />
 
 ### `ALTER`
