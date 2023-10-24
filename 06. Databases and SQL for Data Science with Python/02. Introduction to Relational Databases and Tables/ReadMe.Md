@@ -10,7 +10,7 @@ ER models are used as a tool to design relational databases. The building blocks
 
 Entities are drawn as rectangles, and attributes as ovals, as shown below.
 
-<img src="https://user-images.githubusercontent.com/13508894/277740356-01b3af8e-3227-4f7a-a221-6075c6fd17c2.png" width="75" />
+<img src="https://user-images.githubusercontent.com/13508894/277740356-01b3af8e-3227-4f7a-a221-6075c6fd17c2.png" width="200" />
 
 A database can be thought of as a collection of entities, rather than being used as a model on its own. Entities are objects that independently of any other entities in the database (that have attributes).
 
