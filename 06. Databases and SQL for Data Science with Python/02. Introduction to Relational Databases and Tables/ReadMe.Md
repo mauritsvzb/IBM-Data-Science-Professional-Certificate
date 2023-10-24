@@ -29,6 +29,9 @@ SQL Statements are used for interacting with entities (tables), attributes (colu
 * Data Manipulation Language (DML) statements
 
 ### DDL Statements
+DDL statements are used to define, change, or drop database objects such as tables. Common DDL statement types include the following:
+
+`CREATE`
 Used for creating tables and defining its columns:
 ```
 CREATE TABLE table_name (
@@ -38,3 +41,63 @@ CREATE TABLE table_name (
   ....
 );
 ```
+<img src="https://user-images.githubusercontent.com/13508894/277741820-20d01cd3-f078-4afa-bdf6-4e7cf68a5f29.png" width="500" />
+
+### `ALTER`
+Used for altering tables including adding and dropping columns and modifying their datatypes
+```
+ALTER TABLE table_name
+ADD COLUMN column_name data_type column_constraint;
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+ALTER TABLE table_name
+ALTER COLUMN column_name SET DATA TYPE data_type;
+
+ALTER TABLE table_name
+RENAME COLUMN current_column_name TO new_column_name;
+```
+(Note that unlike the CREATE statement, parentheses are not used to enclose the statement) Each row in the `ALTER TABLE` statement specifies one change that you want to make to the table.
+
+### `TRUNCATE`
+Used for deleting data in a table but not the table itself. This will delete all the rows in a table, but not the table itself.
+```
+TRUNCATE TABLE table_name IMMEDIATE;
+```
+
+### `DROP`
+Used for deleting tables.
+```
+DROP TABLE table_name;
+```
+
+### DML Statements
+DML statements are used to read and modify data in tables. These are also sometimes referred to as CRUD operations, that is, Create, Read, Update and Delete rows in a table. Common DML statement types include:
+
+* `INSERT` - used for inserting a row or several rows of data into a table
+* `SELECT` - reads or selects row or rows from a table
+* `UPDATE` - edits row or rows in a table
+* `DELETE` - removes a row or rows of data from a table
+
+## Useful Notes for Querying Databases
+Querying column names with spaces and special characters
+By default, spaces are mapped to underscores, e.g. `Name of Dog` is mapped to `Name_of_Dog`.
+
+Use _ to replace special characters, such as brackets, e.g. `Breed (dominant breed if not pure breed)` is mapped to `Breed__dominant_breed_if_not_pure_breed_`. Note the double underscore for “ (“, and the trailing underscore for the “)” bracket at the end.
+
+### Querying column names with mixed cases
+Use double quotes to specify mixed-case column names, e.g.
+```
+  SELECT "Id" from DOGS
+```
+is valid, whereas searching for an "ID" column will find nothing.
+
+### Splitting queries into multiple lines
+Use backslash `\` to split queries into multiple lines, e.g.
+```
+  %sql SELECT "Id", "Name_of_Dog", \
+    from dogs \
+    where "Name_of_Dog" = 'Huggy'
+```
+Or, use `%%sql` in the first row of the cell in the notebook, and the backslashes are not needed.
