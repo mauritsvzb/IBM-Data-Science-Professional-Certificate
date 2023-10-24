@@ -7,11 +7,11 @@ The [IBM Data Science Professional Certification](https://www.coursera.org/profe
 This repository contains documentation and resources used to complete the certification, relevant notes and other code snippets, and proof of certification for each course.
 
 # 📑 Courses
-* ✅ 01. What is Data Science?
-* ✅ 02. Tools for Data Science
-* ✅ 03. Data Science Methodology
-* ✅ 04. Python for Data Science, AI & Development
-* ✅ 05. Python Project for Data Science
+* ✅ [01. What is Data Science?](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/01.%20What%20is%20Data%20Science)
+* ✅ [02. Tools for Data Science](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/02.%20Tools%20for%20Data%20Science)
+* ✅ [03. Data Science Methodology](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/03.%20Data%20Science%20Methodology)
+* ✅ [04. Python for Data Science, AI & Development](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/04.%20Python%20for%20Data%20Science%2C%20AI%20%26%20Development)
+* ✅ [05. Python Project for Data Science](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/05.%20Python%20Project%20for%20Data%20Science)
 *  06. Databases and SQL for Data Science with Python
 *  07. Data Analysis with Python
 *  08. Data Visualization with Python
