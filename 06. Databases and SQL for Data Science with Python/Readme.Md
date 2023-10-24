@@ -46,3 +46,13 @@ The purpose of this course is to introduce relational database concepts and to l
     * Inner Join
     * Outer Joins
 
+## 🔑 Key Skills Learned
+* Analysing data within a database using SQL and Python
+* Creating relational databases on Cloud and working with tables
+* Comparing and contrasting DDL to DML
+* Writing SQL statements including SELECT, INSERT, UPDATE, and DELETE
+* Generating joins to query data from multiple tables
+
+## 🏆 Certificates
+To verify the certificates, click the images to follow the links:
+
