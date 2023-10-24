@@ -116,7 +116,7 @@ INSERT INTO Instructor(ins_id, lastname, firstname, city, country)
 SELECT * FROM Instructor;
 ```
 ## `UPDATE` and `DELETE` Statements
-### `UPDATE'
+### `UPDATE`
 To update a row in a table, you must specific the `WHERE` clause (selecting a row or multiple rows based upon their value/s), otherwise all rows will be updated.
 ```
 UPDATE table_name
