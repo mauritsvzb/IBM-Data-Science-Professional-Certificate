@@ -77,5 +77,5 @@ The `GROUP BY` clause groups a result into subsets that has matching values for 
 ## Restricting the Result Set - `HAVING` Clause
 To set a condition to a `GROUP BY` clause, we use the keyword HAVING. The HAVING clause is used in combination with the `GROUP BY` clause. It is very important to note that the `WHERE` clause is for the entire result set, but the `HAVING` clause works only with the `GROUP BY` clause.
 
-<img src="https://user-images.githubusercontent.com/13508894/277778235-9a7f83c4-5347-4dc5-ae64-2eab84797d41.png" width="500" />
+<img src="https://user-images.githubusercontent.com/13508894/277778235-9a7f83c4-5347-4dc5-ae64-2eab84797d41.png" width="600" />
 
