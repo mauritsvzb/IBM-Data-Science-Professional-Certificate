@@ -102,6 +102,13 @@ E.g. To retrieve the first 10 rows in a table:
 SELECT * from tablename LIMIT 10
 ```
 
+You can also use `OFFSET` with `LIMIT` statement to retrieve a specific number of rows starting from a specific row in the table.
+
+E.g. To retrieve 10 rows starting at row 11:
+```
+SELECT * from tablename LIMIT 10 OFFSET 10
+```
+
 ## `INSERT` Statements
 `INSERT` is used to insert 1 or more rows into a table. The syntax is as follow:
 ```
