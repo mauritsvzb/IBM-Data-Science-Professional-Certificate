@@ -22,11 +22,14 @@ This repository contains documentation and resources used to complete the certif
 The following tools were used to complete this certification:
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2bfc9e1a-ed8f-430d-a75e-66cf202036a0.png" width="75" />
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e7f19b4f-9228-4b61-8815-e4738730fc5f.png" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/01062ffa-0756-4b8b-ace3-bccb603d41a2.png" width="138" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/44575b3a-8602-449c-bd9c-2ab6a8fa09f8.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2c54bf3c-6c32-42c8-aae0-7a3b2479447e.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/19144f5b-f5a9-4db3-8b49-526e37d6a8f2.png" width="100" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a4980351-f0ca-4db0-a914-68684c731ded.png" width="77" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e7f19b4f-9228-4b61-8815-e4738730fc5f.png" width="77" />
+
 
 (Python, Jupyter, GitHub, IBM Watson Studio, IBM Cloud Pak, MySQL)
 
@@ -40,10 +43,10 @@ The following Python libraries were used throughout the certification:
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/79b21b95-d887-4a02-95e2-778caad67e16.jpeg" width="182" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/ecc0dcdf-318c-4d62-8940-2acec7249fb0.jpeg" width="134" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/ca504388-7f12-4ff9-a631-c7f242cc6dba.png" width="116" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bbac0c5c-29b8-473a-a3ce-87e399aab755.jpeg" width="82" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bbac0c5c-29b8-473a-a3ce-87e399aab755.jpeg" width="90" />
 
 # 📂 Projects
 * Extracting and Visualizing Stock Data
 
 # 🏆 Certificates
-To verify the certificates, click the images to follow the links.
+To verify the certificates, click the images to follow the links:
