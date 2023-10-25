@@ -26,8 +26,9 @@ The following tools were used to complete this certification:
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2c54bf3c-6c32-42c8-aae0-7a3b2479447e.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/19144f5b-f5a9-4db3-8b49-526e37d6a8f2.png" width="100" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a4980351-f0ca-4db0-a914-68684c731ded.png" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e7f19b4f-9228-4b61-8815-e4738730fc5f.png" width="77" />
 
-(Python, Jupyter, GitHub, IBM Watson Studio, IBM Cloud Pak)
+(Python, Jupyter, GitHub, IBM Watson Studio, IBM Cloud Pak, MySQL)
 
 # 📖 Libraries
 The following Python libraries were used throughout the certification:
@@ -46,4 +47,3 @@ The following Python libraries were used throughout the certification:
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links.
-
