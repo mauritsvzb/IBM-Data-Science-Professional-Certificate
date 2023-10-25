@@ -94,7 +94,7 @@ SELECT DISTINCT COUNTRY from MEDALS
 	WHERE MEDALTYPE = ‘GOLD’
 ```
 
-## `LIMIT`
+### `LIMIT`
 `LIMIT` is used for restricting the number of rows retrieved from the database.
 
 E.g. To retrieve the first 10 rows in a table:
