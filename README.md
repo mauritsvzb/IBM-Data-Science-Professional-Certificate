@@ -23,6 +23,7 @@ The following tools were used to complete this certification:
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2bfc9e1a-ed8f-430d-a75e-66cf202036a0.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e7f19b4f-9228-4b61-8815-e4738730fc5f.png" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/27a4f43c-2836-415a-bc05-739e44f5eebb.png" width="77" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/01062ffa-0756-4b8b-ace3-bccb603d41a2.png" width="138" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/44575b3a-8602-449c-bd9c-2ab6a8fa09f8.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2c54bf3c-6c32-42c8-aae0-7a3b2479447e.png" width="75" />
@@ -49,3 +50,4 @@ The following Python libraries were used throughout the certification:
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
+
