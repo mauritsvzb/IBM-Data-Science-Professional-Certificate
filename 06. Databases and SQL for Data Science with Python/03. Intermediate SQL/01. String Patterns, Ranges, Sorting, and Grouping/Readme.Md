@@ -21,7 +21,7 @@ Instead of writing something like
   SELECT title, pages from Book
     WHERE pages >=290 AND pages <=300 ;
 ```
-the between and clause can be used, so it becomes:
+the `between` and `and` clause can be used, so it becomes:
 ```
   SELECT title, pages from Book
     WHERE pages between 290 and 300 ;
