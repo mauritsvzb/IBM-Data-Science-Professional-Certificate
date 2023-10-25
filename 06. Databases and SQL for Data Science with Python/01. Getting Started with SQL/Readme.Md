@@ -139,7 +139,7 @@ UPDATE Instructor
 	WHERE ins_id=4
 ; 
 ```
-## `DELETE`
+### `DELETE`
 The `DELETE` statement is used to delete 1 or more rows from a table. Again, the `WHERE` clause is needed here.
 ```
 DELETE FROM table_name
