@@ -22,16 +22,14 @@ This repository contains documentation and resources used to complete the certif
 The following tools were used to complete this certification:
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2bfc9e1a-ed8f-430d-a75e-66cf202036a0.png" width="75" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e7f19b4f-9228-4b61-8815-e4738730fc5f.png" width="77" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/27a4f43c-2836-415a-bc05-739e44f5eebb.png" width="77" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/01062ffa-0756-4b8b-ace3-bccb603d41a2.png" width="138" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/759ffa90-7da8-4720-be94-1d8cfe3b8468.png" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/d281a2d8-0c20-4632-9dad-50279b56311b.png" width="200" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/44575b3a-8602-449c-bd9c-2ab6a8fa09f8.png" width="75" />
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2c54bf3c-6c32-42c8-aae0-7a3b2479447e.png" width="75" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/19144f5b-f5a9-4db3-8b49-526e37d6a8f2.png" width="100" />
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a4980351-f0ca-4db0-a914-68684c731ded.png" width="77" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bb0c1c8d-1612-458d-bf8f-4122a30abf3c.png" width="100" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/523a80d5-6f2c-4967-8f29-3aff8e755d4f.png" width="77" />
 
-
-(Python, Jupyter, GitHub, IBM Watson Studio, IBM Cloud Pak, MySQL)
+(Python, MySQL, RStudio, Jupyter, GitHub, IBM Watson Studio, IBM Cloud Pak)
 
 # 📖 Libraries
 The following Python libraries were used throughout the certification:
@@ -51,3 +49,4 @@ The following Python libraries were used throughout the certification:
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
 
+![ibm-cloud-pak_0003_ezgif]()
