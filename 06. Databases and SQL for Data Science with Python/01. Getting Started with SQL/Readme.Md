@@ -81,7 +81,7 @@ SELECT COUNT(COUNTRY) from MEDALS
 	WHERE COUNTRY= 'Canada' 
 ```
 
-## `DISTINCT`
+### `DISTINCT`
 `DISTINCT` is used to remove duplicate values from a result set.
 
 To retrieve unique values in a column:
