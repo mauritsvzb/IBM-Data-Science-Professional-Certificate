@@ -47,6 +47,7 @@ Most databases contain special datatypes for dates and times, e.g.
 * DATE: `YYYYMMDD`
 * TIME: `HHMMSS`
 * TIMESTAMP: `YYYYXXDDHHMMSSZZZZZZ`
+
 Some common date/time functions include: 
 
 * `YEAR()`
