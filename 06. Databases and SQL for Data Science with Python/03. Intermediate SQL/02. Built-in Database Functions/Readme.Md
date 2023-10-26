@@ -68,4 +68,4 @@ SELECT COUNT(*) FROM TABLE
 
 Some further uses of functions are shown below:
 
-<img src="https://user-images.githubusercontent.com/13508894/278385308-f2f9e550-265a-4b69-a8f6-b50ab9494f87.png" width="750" />
+<img src="https://user-images.githubusercontent.com/13508894/278385308-f2f9e550-265a-4b69-a8f6-b50ab9494f87.png" width="850" />
