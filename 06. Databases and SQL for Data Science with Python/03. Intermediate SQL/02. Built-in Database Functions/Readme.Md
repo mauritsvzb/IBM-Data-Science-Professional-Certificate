@@ -71,9 +71,8 @@ The `INTERVAL` function is used to perform operations involving date and time in
 ```
 SELECT DATE_add(RESCUEDATE, INTERVAL 3 DAY) FROM PETRESCUE -- adds 3 days to RESCUEDATE
 
-SELECT NOW() + INTERVAL 1 DAY; -- Adds 1 day to the current date and time
-SELECT CURDATE() + INTERVAL 1 MONTH; -- Adds 1 month to the current date
-SELECT NOW() - INTERVAL 1 HOUR; -- Subtracts 1 hour from the current date and time
+select DATEDIFF(CURRENT_TIMESTAMP,RESCUEDATE) from PETRESCUE; -- calculates the length of time the animals have been rescued
+
 ```
 
 Some further uses of functions are shown below:
