@@ -67,6 +67,13 @@ SELECT COUNT(*) FROM TABLE
     WHERE MONTH(RESCUEDATE) = '05' ;
 ```
 
+The `INTERVAL` function is used to perform operations involving date and time intervals. It's typically used in conjunction with date and time functions to add or subtract a specific amount of time from a date or timestamp.
+```
+SELECT NOW() + INTERVAL 1 DAY; -- Adds 1 day to the current date and time
+SELECT CURDATE() + INTERVAL 1 MONTH; -- Adds 1 month to the current date
+SELECT NOW() - INTERVAL 1 HOUR; -- Subtracts 1 hour from the current date and time
+```
+
 Some further uses of functions are shown below:
 
 <img src="https://user-images.githubusercontent.com/13508894/278385308-f2f9e550-265a-4b69-a8f6-b50ab9494f87.png" width="1000" />
