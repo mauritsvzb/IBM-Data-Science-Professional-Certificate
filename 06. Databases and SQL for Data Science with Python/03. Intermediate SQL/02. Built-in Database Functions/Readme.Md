@@ -69,6 +69,8 @@ SELECT COUNT(*) FROM TABLE
 
 The `INTERVAL` function is used to perform operations involving date and time intervals. It's typically used in conjunction with date and time functions to add or subtract a specific amount of time from a date or timestamp.
 ```
+SELECT DATE_add(RESCUEDATE, INTERVAL 3 DAY) FROM PETRESCUE -- adds 3 days to RESCUEDATE
+
 SELECT NOW() + INTERVAL 1 DAY; -- Adds 1 day to the current date and time
 SELECT CURDATE() + INTERVAL 1 MONTH; -- Adds 1 month to the current date
 SELECT NOW() - INTERVAL 1 HOUR; -- Subtracts 1 hour from the current date and time
