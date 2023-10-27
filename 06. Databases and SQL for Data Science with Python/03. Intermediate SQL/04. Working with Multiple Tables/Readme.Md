@@ -22,7 +22,7 @@ SELECT * FROM EMPLOYEES
 To retrieve only the list of employees from a specific location:
 
 * EMPLOYEES table does not contain location information
-* Need to get location information from DEPARTMENTS table To do so:
+* Need to get location information from DEPARTMENTS table. To do so:
 ```
 SELECT * FROM EMPLOYEES WHERE DEP_ID IN (SELECT DEPT_ID_DEP FROM DEPARTMENTS WHERE LOC_ID = 'L0002') ;
 ```
