@@ -15,6 +15,10 @@ To pass SQL statements to the DBMS, an application program calls functions in th
 
 Some of the proprietary APIs used by popular SQL-based DBMS systems are as follows:
 
+| Header    | Heading |
+| --------- | ------- |
+| first     |         |
+
 Application or Database	SQL API
 MySQL	MySQL C API
 PostgresSQL	psycopg2
