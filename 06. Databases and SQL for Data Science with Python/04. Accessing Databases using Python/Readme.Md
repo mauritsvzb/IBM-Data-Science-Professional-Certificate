@@ -15,11 +15,14 @@ To pass SQL statements to the DBMS, an application program calls functions in th
 
 Some of the proprietary APIs used by popular SQL-based DBMS systems are as follows:
 
-| Header    | Heading |
+| Application or Database | SQL API |
 | --------- | ------- |
 | first     |         |
+| first     |         |
+| first     |         |
+| first     |         |
 
-Application or Database	SQL API
+
 MySQL	MySQL C API
 PostgresSQL	psycopg2
 IBM DB2	ibm_db
@@ -27,6 +30,7 @@ SQL Server	dblib API
 Database access for Microsoft Windows OS	ODBC
 Oracle	OCI
 Java	JDBC
+
 This course will make use of the IBM DB2 Database, and therefore will also use the ibm_db SQL API, and DB-API
 
 ## Writing Code using DB-API
