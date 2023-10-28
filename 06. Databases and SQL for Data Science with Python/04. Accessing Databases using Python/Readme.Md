@@ -75,7 +75,7 @@ The steps of querying a database using the DB-API are as follows
 ```
    Results = Cursor.fetchall()
 ```
-Finally, when the system is done running the queries, free all resources by closing the connection. It is always important to close connections to avoid unused connections taking up resources.
+6. Finally, when the system is done running the queries, free all resources by closing the connection. It is always important to close connections to avoid unused connections taking up resources.
 ```
    Cursor.close()
    Connection.close()
