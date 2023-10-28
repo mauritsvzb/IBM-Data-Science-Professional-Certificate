@@ -49,4 +49,3 @@ The following Python libraries were used throughout the certification:
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
 
-![ibm-cloud-pak_0003_ezgif]()
