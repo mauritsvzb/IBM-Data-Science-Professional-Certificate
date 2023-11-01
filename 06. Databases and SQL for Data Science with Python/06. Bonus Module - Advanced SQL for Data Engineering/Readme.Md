@@ -77,11 +77,11 @@ A classic example transaction is an item purchase from a shop. Consider the 2 ta
 
 If Rose buys a pair of Boots for £200, the following ACID commands must all be followed:
 
+<img src="https://user-images.githubusercontent.com/13508894/279635102-27e37055-e038-49e9-bbc7-26932ca585c3.png" width="800" />
 
+Rose's balance, and the `ShoeShop` balance must be updated in the `BankAccounts` table. The Boots stock must also be updated in the `ShoeShop` table.
 
-Rose's balance, and the ShoeShop balance must be updated in the BankAccounts table. The Boots stock must also be updated in the ShoeShop table.
-
-JOIN Statements
+## `JOIN` Statements
 A JOIN combines the rows from two or more tables based on a relationship between certain columns in these tables. The column/s in each table to be used as a link between the tables must first be identified, and to do this, a join is usually created between a primary key in one table and a foreign key in another.
 
 
