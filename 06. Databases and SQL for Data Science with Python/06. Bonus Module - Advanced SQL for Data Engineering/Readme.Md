@@ -43,12 +43,13 @@ Some benefits include:
 * Reuse of code because multiple applications can use the same stored procedure for the same job. Increase in security because:
   * You do not need to expose all your table and column information to client-side develop-ers
   * You can use server-side logic to validate data before accepting it into the system.
-* They can reduce network traffic, improve performance, reuse code, and increase security Stored procedures can be called from external applications and dynamic SQL statements.
+* They can reduce network traffic, improve performance, reuse code, and increase security 
+* Stored procedures can be called from external applications and dynamic SQL statements
 
 #### Stored Procedure Syntax
 The syntax of a stored procedure is as follows:
 
-<img src="https://user-images.githubusercontent.com/13508894/279633562-5aa67b23-8e23-4fab-9369-792c90297e16.png" width="500" />
+<img src="https://user-images.githubusercontent.com/13508894/279633562-5aa67b23-8e23-4fab-9369-792c90297e16.png" width="800" />
 
 And to call the stored procedure, run the following:
 
