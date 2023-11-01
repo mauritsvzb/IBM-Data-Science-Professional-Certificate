@@ -52,25 +52,28 @@ The syntax of a stored procedure is as follows:
 <img src="https://user-images.githubusercontent.com/13508894/279633562-5aa67b23-8e23-4fab-9369-792c90297e16.png" width="800" />
 
 And to call the stored procedure, run the following:
-
+```
   CALL RETRIEVE_ALL ; 
-where RETRIEVE_ALL was the stored procedure defined previously.
+```
 
-ACID Transactions
+where `RETRIEVE_ALL` was the stored procedure defined previously.
+
+### ACID Transactions
 A transaction is an indivisible unit of work. It can consist of one or more SQL statements, but to be considered successful, either all of those SQL statements must complete successfully, leaving the database in a new stable state, or none must complete, leaving the database as it was before the transaction began.
 
 ACID stands for:
 
-Atomic – all changes must be performed successfully, or not at all
-Consistent – data must be in a consistent state before and after the transaction
-Isolated – no other process can change the data while the transaction is running
-Durable – the changes made by the transaction must persist
-SQL commands BEGIN, COMMIT, and ROLLBACK are used to manage ACID transactions. SQL commands can be called from languages like C, R and Python.
+* Atomic – all changes must be performed successfully, or not at all
+* Consistent – data must be in a consistent state before and after the transaction
+* Isolated – no other process can change the data while the transaction is running
+* Durable – the changes made by the transaction must persist
+
+SQL commands `BEGIN, COMMIT`, and `ROLLBACK` are used to manage ACID transactions. SQL commands can be called from languages like C, R and Python.
 
 Example
-A classic example transaction is an item purchase from a shop. Consider the 2 tables below, BankAccounts and ShoeShop.
+A classic example transaction is an item purchase from a shop. Consider the 2 tables below, `BankAccounts` and `ShoeShop`.
 
-
+<img src="https://user-images.githubusercontent.com/13508894/279634689-79d3524f-3148-4f91-926c-1ddef89e1387.png" width="800" />
 
 If Rose buys a pair of Boots for £200, the following ACID commands must all be followed:
 
