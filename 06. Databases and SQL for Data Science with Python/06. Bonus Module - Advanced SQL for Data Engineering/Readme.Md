@@ -91,16 +91,17 @@ The syntax for all types of `JOIN` are shown below, and the following sections g
 <img src="https://user-images.githubusercontent.com/13508894/279635945-90257ebb-9a09-4897-a7db-833f6a52d2bd.png" width="800" />
 
 ### `INNER JOIN`
-An INNER JOIN displays only the rows from two tables that have matching value in a common column, usually the primary key of one table that exists as a foreign key in the second table.
+An `INNER JOIN` displays only the rows from two tables that have matching value in a common column, usually the primary key of one table that exists as a foreign key in the second table.
 
-For example, to retrieve a list of all people who are borrowing books, and the date of the loan, data is needed from the borrower table and the loan table.
+For example, to retrieve a list of all people who are borrowing books, and the date of the loan, data is needed from the `borrower` table and the `loan` table.
 
-In the FROM clause, specify the join between the borrower table and the loan table as BORROWER INNER JOIN LOAN.
-Identify the borrower table as B, and the loan table as L (and use these aliases).
-The table specified on the left of the JOIN clause is known as the left table – in this case, the borrower table is the left table.
-For this join, select borrower ID, last name, and country from the borrower table, and the borrower ID and the loan date from the loan table.
-In the ON clause, specify the JOIN predicate, in this case the condition that the borrower ID in the borrower table is equal to the borrower ID in the loan table.
+* In the `FROM` clause, specify the join between the borrower table and the loan table as `BORROWER INNER JOIN LOAN`.
+* Identify the `borrower` table as `B`, and the `loan` table as `L` (and use these aliases).
+* The table specified on the left of the `JOIN` clause is known as the left table – in this case, the `borrower` table is the left table.
+* For this join, select borrower ID, last name, and country from the `borrower` table, and the borrower ID and the loan date from the `loan` table.
+* In the `ON` clause, specify the `JOIN` predicate, in this case the condition that the borrower ID in the `borrower` table is equal to the borrower ID in the `loan` table.
 
+<img src="https://user-images.githubusercontent.com/13508894/279637106-445bd92f-10d4-4537-9bbd-c9643deba2a9.png" width="800" />
 
 The result set shows only the rows from both tables that have the same borrower ID. The rows are displayed if they Borrower_Id matches. Rows with Borrower_IDs that do not match are not displayed.
 
