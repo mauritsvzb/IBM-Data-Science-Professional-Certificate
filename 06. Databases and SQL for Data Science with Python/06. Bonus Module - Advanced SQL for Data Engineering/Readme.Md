@@ -7,7 +7,7 @@ Views can:
 * Show a selection of data for a given table
 * Combine two or more tables in meaningful ways
 * Simplify access to data
-* Show only portions of daa in the table
+* Show only portions of data in the table
 
 An example of why to use a view would be to display only non-sensitive data from an Employees table.
 
