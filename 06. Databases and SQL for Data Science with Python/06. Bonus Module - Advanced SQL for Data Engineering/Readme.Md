@@ -73,7 +73,7 @@ SQL commands `BEGIN, COMMIT`, and `ROLLBACK` are used to manage ACID transaction
 Example
 A classic example transaction is an item purchase from a shop. Consider the 2 tables below, `BankAccounts` and `ShoeShop`.
 
-<img src="https://user-images.githubusercontent.com/13508894/279634689-79d3524f-3148-4f91-926c-1ddef89e1387.png" width="800" />
+<img src="https://user-images.githubusercontent.com/13508894/279634689-79d3524f-3148-4f91-926c-1ddef89e1387.png" width="700" />
 
 If Rose buys a pair of Boots for £200, the following ACID commands must all be followed:
 
@@ -84,13 +84,13 @@ Rose's balance, and the `ShoeShop` balance must be updated in the `BankAccounts`
 ## `JOIN` Statements
 A JOIN combines the rows from two or more tables based on a relationship between certain columns in these tables. The column/s in each table to be used as a link between the tables must first be identified, and to do this, a join is usually created between a primary key in one table and a foreign key in another.
 
+<img src="https://user-images.githubusercontent.com/13508894/279635766-06adbf60-aa2b-4d9d-9a5b-e5f0ff4606f2.png" width="800" />
 
+The syntax for all types of `JOIN` are shown below, and the following sections go into more detail, with examples.
 
-The syntax for all types of JOIN are shown below, and the following sections go into more detail, with examples.
+<img src="https://user-images.githubusercontent.com/13508894/279635945-90257ebb-9a09-4897-a7db-833f6a52d2bd.png" width="800" />
 
-
-
-INNER JOIN
+### `INNER JOIN`
 An INNER JOIN displays only the rows from two tables that have matching value in a common column, usually the primary key of one table that exists as a foreign key in the second table.
 
 For example, to retrieve a list of all people who are borrowing books, and the date of the loan, data is needed from the borrower table and the loan table.
