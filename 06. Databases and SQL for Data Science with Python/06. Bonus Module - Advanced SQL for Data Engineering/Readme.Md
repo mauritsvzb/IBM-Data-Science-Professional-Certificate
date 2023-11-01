@@ -40,7 +40,8 @@ Some benefits include:
 
 * Reduction in network traffic because only one call is needed to execute multiple statements.
 * Improvement in performance because the processing happens on the server where the data is stored, with just the final result being passed back to the client.
-* Reuse of code because multiple applications can use the same stored procedure for the same job. Increase in security because:
+* Reuse of code because multiple applications can use the same stored procedure for the same job. 
+* Increase in security because:
   * You do not need to expose all your table and column information to client-side develop-ers
   * You can use server-side logic to validate data before accepting it into the system.
 * They can reduce network traffic, improve performance, reuse code, and increase security 
