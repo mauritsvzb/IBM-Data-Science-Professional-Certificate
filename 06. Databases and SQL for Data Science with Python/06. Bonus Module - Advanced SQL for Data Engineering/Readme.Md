@@ -103,30 +103,32 @@ For example, to retrieve a list of all people who are borrowing books, and the d
 
 <img src="https://user-images.githubusercontent.com/13508894/279637106-445bd92f-10d4-4537-9bbd-c9643deba2a9.png" width="800" />
 
-The result set shows only the rows from both tables that have the same borrower ID. The rows are displayed if they Borrower_Id matches. Rows with Borrower_IDs that do not match are not displayed.
+The result set shows only the rows from both tables that have the same borrower ID. The rows are displayed if the `Borrower_Id` matches. Rows with `Borrower_IDs` that do not match are not displayed.
 
+<img src="https://user-images.githubusercontent.com/13508894/279637705-4f385232-d0fa-401a-a60f-43b45470e67f.png" width="800" />
 
+The `Borrower_Id`, `Lastname`, and `Country` columns are taken from the `Borrower` table and joined to the `Borrower_Id` and `Loan_Date` columns from the `Loan` table to make the result set.
 
-`` ``The `Borrower_Id`, `Lastname`, and Country columns are taken from the `Borrower` table and joined to the `Borrower_Id` and `Loan_Date` columns from the Loan table to make the result set.
-OUTER JOIN
+### `OUTER JOIN`
 Outer joins, like inner joins, return the rows from each table that have matching values in the join columns. Unlike inner joins, outer joins also return the rows that do not have a match between the tables.
 
 SQL offers three types of outer joins:
 
-LEFT OUTER JOIN
-RIGHT OUTER JOIN
-FULL OUTER JOIN
+* `LEFT OUTER JOIN`
+* `RIGHT OUTER JOIN`
+* `FULL OUTER JOIN`
 
+<img src="https://user-images.githubusercontent.com/13508894/279638368-350678b2-2d56-4648-adcb-3f025230c0a2.png" width="800" />
 
-LEFT JOIN Operator
+#### LEFT JOIN Operator
 A left outer join returns all the rows from the left table, and any matching rows from the right table. An example is shown below:
 
+<img src="https://user-images.githubusercontent.com/13508894/279638589-f5359b91-49e3-44ad-add5-dd04cc7c59ab.png" width="800" />
 
-
-The Borrower table is the first table specified in the FROM clause of the SELECT statement, so the Borrower table is the LEFT table, and the Loan table is the RIGHT table.
-In the FROM clause, Borrower is listed on the left side of the join operator, therefore all rows from the Borrower table will be selected and combined with the contents of the Loan table based on the criteria specified in the query.
-In this example, the criteria is the BORROWER ID column. For a LEFT OUTER JOIN, simply called a LEFT JOIN, the following columns from the Borrower table will be selected: BorrowerID, LastName, and Country, and the following columns will also be selected from the Loan table: BorrowerID, and LoanDate.
-The LEFT JOIN selects each BORROWER ID in the Borrower table and displays the LoanDate from the Loan table. The result set shows each Borrower ID from the borrower table, and the loan date for that borrower. For example, there is no loan date for the last three rows, so the borrower ID and loan date show null values.
+* The `Borrower` table is the first table specified in the `FROM` clause of the `SELECT` statement, so the `Borrower` table is the LEFT table, and the `Loan` table is the RIGHT table.
+* In the `FROM` clause, `Borrower` is listed on the left side of the join operator, therefore all rows from the `Borrower` table will be selected and combined with the contents of the `Loan` table based on the criteria specified in the query.
+* In this example, the criteria is the `BORROWER ID` column. For a `LEFT OUTER JOIN`, simply called a `LEFT JOIN`, the following columns from the `Borrower` table will be selected: `BorrowerID`, `LastName`, and `Country`, and the following columns will also be selected from the `Loan` table: `BorrowerID`, and `LoanDate`.
+* The `LEFT JOIN` selects each `BORROWER ID` in the `Borrower` table and displays the `LoanDate` from the `Loan` table. The result set shows each `Borrower ID` from the `borrower` table, and the loan date for that borrower. For example, there is no loan date for the last three rows, so the borrower ID and loan date show null values.
 RIGHT JOIN Operator
 A right outer join returns all the rows from the right table, and any matching rows from the left table. An example is shown below:
 
