@@ -69,7 +69,7 @@ ACID stands for:
 * Isolated – no other process can change the data while the transaction is running
 * Durable – the changes made by the transaction must persist
 
-SQL commands `BEGIN, COMMIT`, and `ROLLBACK` are used to manage ACID transactions. SQL commands can be called from languages like C, R and Python.
+SQL commands `BEGIN`, `COMMIT`, and `ROLLBACK` are used to manage ACID transactions. SQL commands can be called from languages like C, R and Python.
 
 Example
 A classic example transaction is an item purchase from a shop. Consider the 2 tables below, `BankAccounts` and `ShoeShop`.
