@@ -71,7 +71,7 @@ ACID stands for:
 
 SQL commands `BEGIN`, `COMMIT`, and `ROLLBACK` are used to manage ACID transactions. SQL commands can be called from languages like C, R and Python.
 
-Example
+Example:
 A classic example transaction is an item purchase from a shop. Consider the 2 tables below, `BankAccounts` and `ShoeShop`.
 
 <img src="https://user-images.githubusercontent.com/13508894/279634689-79d3524f-3148-4f91-926c-1ddef89e1387.png" width="700" />
