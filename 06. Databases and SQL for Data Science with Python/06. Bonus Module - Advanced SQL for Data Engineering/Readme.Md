@@ -100,6 +100,15 @@ INNER JOIN JOBS J ON J.JOB_IDENT = JH.JOBS_ID
 where E.DEP_ID = '5'
 ```
 
+How does a LEFT join look like that includes a condition?
+```
+SELECT E.EMP_ID, E.L_NAME, E.DEP_ID, D.DEP_NAME
+FROM EMPLOYEES E LEFT JOIN DEPARTMENTS D
+ON E.DEP_ID = D.DEPT_ID_DEP  
+AND YEAR(E.B_DATE) < 1980
+```
+
+
 
 ### `INNER JOIN`
 An `INNER JOIN` displays only the rows from two tables that have matching value in a common column, usually the primary key of one table that exists as a foreign key in the second table.
