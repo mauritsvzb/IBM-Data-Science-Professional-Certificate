@@ -167,3 +167,18 @@ A full outer join, or full join, returns all rows from both tables. An example i
 
 * For a `FULL JOIN`, all rows are selected from the `Borrower` table and all rows from the `Loan` table are also selected.
 * The result set shows all eight records from the `Borrower` table listed with the corresponding data from the `Loan` table.
+
+Example:
+Perform a Full Join on the EMPLOYEES and DEPARTMENT tables and select the First name, Last name and Department name of all employees.
+
+```
+select E.F_NAME,E.L_NAME,D.DEP_NAME
+from EMPLOYEES AS E 
+LEFT OUTER JOIN DEPARTMENTS AS D ON E.DEP_ID=D.DEPT_ID_DEP
+
+UNION
+
+select E.F_NAME,E.L_NAME,D.DEP_NAME
+from EMPLOYEES AS E 
+RIGHT OUTER JOIN DEPARTMENTS AS D ON E.DEP_ID=D.DEPT_ID_DEP
+```
