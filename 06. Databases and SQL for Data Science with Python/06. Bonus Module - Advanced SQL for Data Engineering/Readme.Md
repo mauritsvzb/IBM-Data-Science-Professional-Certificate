@@ -91,6 +91,16 @@ The syntax for all types of `JOIN` are shown below, and the following sections g
 
 <img src="https://user-images.githubusercontent.com/13508894/279635945-90257ebb-9a09-4897-a7db-833f6a52d2bd.png" width="800" />
 
+How does a JOIN look like between more than 2 tables?
+```
+SELECT E.F_NAME, E.L_NAME, JH.START_DATE, J.JOB_TITLE
+FROM EMPLOYEES E
+INNER JOIN JOB_HISTORY JH ON E.EMP_ID = JH.EMPL_ID
+INNER JOIN JOBS J ON J.JOB_IDENT = JH.JOBS_ID
+where E.DEP_ID = '5'
+```
+
+
 ### `INNER JOIN`
 An `INNER JOIN` displays only the rows from two tables that have matching value in a common column, usually the primary key of one table that exists as a foreign key in the second table.
 
