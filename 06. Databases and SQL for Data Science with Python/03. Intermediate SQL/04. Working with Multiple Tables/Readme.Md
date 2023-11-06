@@ -13,7 +13,7 @@ To explain sub-queries with multiple tables, the following tables will be used i
 
 
 To retrieve only the employee records that correspond to departments in the `DEPARTMENTS` table:
-```
+```sql
 SELECT * FROM EMPLOYEES
   WHERE DEP_ID IN
     (SELECT DEPT_ID_DEP FROM DEPARTMENTS) ;
@@ -23,12 +23,12 @@ To retrieve only the list of employees from a specific location:
 
 * EMPLOYEES table does not contain location information
 * Need to get location information from DEPARTMENTS table. To do so:
-```
+```sql
 SELECT * FROM EMPLOYEES WHERE DEP_ID IN (SELECT DEPT_ID_DEP FROM DEPARTMENTS WHERE LOC_ID = 'L0002') ;
 ```
 
 To retrieve the department ID and name for employees who earn more than $70,000:
-```
+```sql
 SELECT DEPT_ID_DEP, DEP_NAME FROM DEPARTMENTS
   WHERE DEPT_ID_DEP IN
     (SELECT DEP_ID FROM EMPLOYEES
@@ -37,7 +37,7 @@ SELECT DEPT_ID_DEP, DEP_NAME FROM DEPARTMENTS
 
 ## Implicit Join
 To access multiple tables using an Implicit Join, specify 2 tables in the `FROM` clause, e.g.
-```
+```sql
 SELECT * FROM EMPLOYEES, DEPARTMENTS ;
 ```
 
@@ -48,19 +48,19 @@ The result is a full join (or Cartesian join):
 
 To limit the result set, additional operands can be used, such as
 
-```
+```sql
 SELECT * FROM EMPLOYEES, DEPARTMENTS
   WHERE EMPLOYEES.DEP_ID = DEPARTMENTS.DEPT_ID_DEP ; 
 ```
 
 This notation can also be shortened by using aliases for table names, so that it becomes:
-```
+```sql
 SELECT * FROM EMPLOYEES E, DEPARTMENTS D
   WHERE E.DEP_ID = D.DEPT_ID_DEP ;
 ```
 
 These aliases can also be used in the select clause itself, in examples such as
-```
+```sql
 SELECT E.EMP_ID, D.DEP_ID FROM 
   EMPLOYEES E, DEPARTMENTS D
     WHERE E.DEP_ID = D.DEPT_ID_DEP
