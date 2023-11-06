@@ -10,11 +10,11 @@ The input here is a collection of values (e.g. an entire column), and the output
 * `MAX()`
 * `AVG()`
 For example, to return the sum of the cost column in TABLE,
-```
+```sql
 SELECT SUM(COST) FROM TABLE ;
 ```
 To explicitly name the returned column, use a column alias, as follows:
-```
+```sql
 SELECT SUM(COST) AS SUM_OF_COST FROM TABLE ;
 ```
 
@@ -26,17 +26,17 @@ These functions perform operations on every input value, and some examples inclu
 * `UCASE()`
 * `LCASE()`
 For example, the following will round up every value in the COST column:
-```
+```sql
 SELECT ROUND(COST) FROM TABLE ;
 ```
 
 and the following will return the length of each value in the ANIMAL column (i.e. the number of letters in the string):
-```
+```sql
 SELECT LENGTH(ANIMAL) FROM TABLE ;
 ```
 
 These functions can be used with the `WHERE` clause, e.g.
-```
+```sql
 SELECT * FROM TABLE
     WHERE LCASE(ANIMAL) = 'cat' ;
 ```
@@ -62,13 +62,13 @@ Some common date/time functions include:
 * `SECOND()`
 
 So, for example, to get the number of rescues during the month of May:
-```
+```sql
 SELECT COUNT(*) FROM TABLE
     WHERE MONTH(RESCUEDATE) = '05' ;
 ```
 
 The `INTERVAL` function is used to perform operations involving date and time intervals. It's typically used in conjunction with date and time functions to add or subtract a specific amount of time from a date or timestamp.
-```
+```sql
 SELECT DATE_add(RESCUEDATE, INTERVAL 3 DAY) FROM PETRESCUE; -- adds 3 days to RESCUEDATE
 
 select DATEDIFF(CURRENT_TIMESTAMP,RESCUEDATE) from PETRESCUE; -- calculates the length of time the animals have been rescued
