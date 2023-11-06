@@ -154,5 +154,79 @@ END @
 DELIMITER ;
 ```
 
+## Exercise 4, Question 1
+Update your stored procedure definition. Add  generic `ELSE` clause to the IF statement that rolls back the current score if the score did not fit any of the preceding categories.
 
+```sql
+DELIMITER @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+	IN in_School_ID INTEGER, IN in_Leader_Score INTEGER)
+BEGIN
+	IF in_Leader_Score BETWEEN 80 AND 99 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 60 AND 79 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 40 AND 59 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Average'
+			WHERE School_ID = in_School_ID;		
+		ELSEIF in_Leader_Score BETWEEN 20 AND 39 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Weak'
+			WHERE School_ID = in_School_ID;	
+		ELSEIF 	in_Leader_Score BETWEEN 0 AND 19 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Weak'
+			WHERE School_ID = in_School_ID;	
+		ELSE
+			ROLLBACK;
+		END IF;
 
+END @
+
+DELIMITER ;
+```
+
+## Exercise 4, Question 2
+
+Update your stored procedure definition again. Add a statement to commit the current unit of work at the end of the procedure. 
+
+```sql
+DELIMITER @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+	IN in_School_ID INTEGER, IN in_Leader_Score INTEGER)
+BEGIN
+	IF in_Leader_Score BETWEEN 80 AND 99 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 60 AND 79 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 40 AND 59 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Average'
+			WHERE School_ID = in_School_ID;		
+		ELSEIF in_Leader_Score BETWEEN 20 AND 39 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Weak'
+			WHERE School_ID = in_School_ID;	
+		ELSEIF 	in_Leader_Score BETWEEN 0 AND 19 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Weak'
+			WHERE School_ID = in_School_ID;	
+		ELSE
+			ROLLBACK;
+		END IF;
+
+		COMMIT;
+
+END @
+
+DELIMITER ;
+```
