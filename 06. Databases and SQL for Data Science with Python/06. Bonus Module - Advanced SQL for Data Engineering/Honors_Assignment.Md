@@ -73,4 +73,86 @@ SELECT * FROM School_Icon;
 | Alessandro Volta Elementary School	| Weak
 | Alexander Graham Bell Elementary School	| Weak
 | Alexander Graham Elementary School	| Weak
-.....	
+.....	| .....
+
+## Exercise 3, Question 1
+
+Write the structure of a query to create or replace a stored procedure called `UPDATE_LEADERS_SCORE` that takes a `in_School_ID` parameter as an integer and a `in_Leader_Score` parameter as an integer. 
+
+```sql
+DELIMITER @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+	IN in_School_ID INTEGER, IN in_Leader_Score INTEGER)
+BEGIN
+
+END @
+
+DELIMITER ;
+```
+
+## Exercise 3, Question 2
+Inside your stored procedure, write a SQL statement to update the `Leaders_Score` in `CHICAGO_PUBLIC_SCHOOLS` table for the school indentified by `in_School_ID` to the value in the `in_Leader_Score` parameter.
+
+* Reference: SQL Cheat Sheet: Views, Stored Procedures and Transactions
+
+```sql
+DELIMITER @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+	IN in_School_ID INTEGER, IN in_Leader_Score INTEGER)
+BEGIN
+	UPDATE chicago_public_schools
+	SET Leaders_Score = in_Leader_Score
+	WHERE School_ID = in_School_ID
+
+END @
+
+DELIMITER ;
+```
+
+## Exercise 3, Question 3
+Inside your stored procedure, write a SQL IF statement to update the Leaders_Icon field in the CHICAGO_PUBLIC_SCHOOLS table for the school identified by in_School_ID using the following information.
+
+| Score lower limit | Score upper limit |  Icon
+| --- | ---| --- |
+| 80	| 99 | 	Very strong
+60 | 	79 | 	Strong
+40 | 	59 | 	Average
+20 | 	39 | 	Weak
+0 | 	19 | 	Very weak
+* Note: Since REORG TABLE is a DB2 command line, there fore CALL SYSPROC.ADMIN_CMD() has to be used.
+* Reference: [https://www.ibm.com/docs/en/db2/11.5?topic=commands-reorg-table-command-using-admin-cmd](https://www.ibm.com/docs/en/db2/11.5?topic=commands-reorg-table-command-using-admin-cmd)
+
+```sql
+DELIMITER @
+CREATE PROCEDURE UPDATE_LEADERS_SCORE (
+	IN in_School_ID INTEGER, IN in_Leader_Score INTEGER)
+BEGIN
+	IF in_Leader_Score BETWEEN 80 AND 99 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 60 AND 79 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Strong'
+			WHERE School_ID = in_School_ID;
+		ELSEIF in_Leader_Score BETWEEN 40 AND 59 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Average'
+			WHERE School_ID = in_School_ID;		
+		ELSEIF in_Leader_Score BETWEEN 20 AND 39 THEN
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Weak'
+			WHERE School_ID = in_School_ID;	
+		ELSE 	
+			UPDATE chicago_public_schools 
+			SET Leaders_Score = in_Leader_Score, Leaders_Icon = 'Very Weak'
+			WHERE School_ID = in_School_ID;	
+		END IF;
+
+END @
+
+DELIMITER ;
+```
+
+
+
