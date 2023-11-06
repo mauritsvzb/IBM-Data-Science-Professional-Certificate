@@ -13,7 +13,7 @@ An example of why to use a view would be to display only non-sensitive data from
 
 #### View Syntax
 The syntax of a `CREATE VIEW` statement is as follows:
-```
+```sql
     CREATE VIEW view_name AS
     SELECT column1, column2, ...
     FROM table_name
@@ -21,7 +21,7 @@ The syntax of a `CREATE VIEW` statement is as follows:
 ```
 
 The syntax of a `REPLACE VIEW` statement is as follows:
-```
+```sql
     CREATE OR REPLACE VIEW view_name AS
     SELECT column_1, column_2, ...
     FROM table_name
@@ -29,7 +29,7 @@ The syntax of a `REPLACE VIEW` statement is as follows:
 ```
 
 The syntax of a `DROP VIEW` statement is as follows:
-```
+```sql
     DROP VIEW view_name ;
 ```
 
@@ -53,7 +53,7 @@ The syntax of a stored procedure is as follows:
 <img src="https://user-images.githubusercontent.com/13508894/279633562-5aa67b23-8e23-4fab-9369-792c90297e16.png" width="800" />
 
 And to call the stored procedure, run the following:
-```
+```sql
   CALL RETRIEVE_ALL ; 
 ```
 
@@ -92,7 +92,7 @@ The syntax for all types of `JOIN` are shown below, and the following sections g
 <img src="https://user-images.githubusercontent.com/13508894/279635945-90257ebb-9a09-4897-a7db-833f6a52d2bd.png" width="800" />
 
 How does a JOIN look like between more than 2 tables?
-```
+```sql
 SELECT E.F_NAME, E.L_NAME, JH.START_DATE, J.JOB_TITLE
 FROM EMPLOYEES E
 INNER JOIN JOB_HISTORY JH ON E.EMP_ID = JH.EMPL_ID
@@ -101,7 +101,7 @@ where E.DEP_ID = '5'
 ```
 
 How does a LEFT join look like that includes a condition?
-```
+```sql
 SELECT E.EMP_ID, E.L_NAME, E.DEP_ID, D.DEP_NAME
 FROM EMPLOYEES E LEFT JOIN DEPARTMENTS D
 ON E.DEP_ID = D.DEPT_ID_DEP  
@@ -171,7 +171,7 @@ A full outer join, or full join, returns all rows from both tables. An example i
 Example:
 Perform a Full Join on the EMPLOYEES and DEPARTMENT tables and select the First name, Last name and Department name of all employees.
 
-```
+```sql
 select E.F_NAME,E.L_NAME,D.DEP_NAME
 from EMPLOYEES AS E 
 LEFT OUTER JOIN DEPARTMENTS AS D ON E.DEP_ID=D.DEPT_ID_DEP
