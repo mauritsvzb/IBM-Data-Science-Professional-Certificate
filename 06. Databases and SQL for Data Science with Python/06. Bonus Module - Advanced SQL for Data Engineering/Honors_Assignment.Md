@@ -14,7 +14,7 @@ WHERE CD.HARDSHIP_INDEX == 98;
 ### output:
 
 | NAME_OF_SCHOOL |	COMMUNITY_AREA_NAME	| AVERAGE_STUDENT_ATTENDANCE | HARDSHIP_INDEX
-| _______________ | ______ | ____| ____ |
+| --- |  --- | --- | --- |
 | George Washington Carver Military Academy High School	| Riverdale |	91.60%	| 98 |
 | George Washington Carver Primary School	| Riverdale |	90.90%	98 |
 | Ira F Aldridge Elementary School |	Riverdale	| 92.90% |	98 |
