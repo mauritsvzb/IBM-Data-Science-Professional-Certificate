@@ -33,7 +33,7 @@ DDL statements are used to define, change, or drop database objects such as tabl
 
 `CREATE`
 Used for creating tables and defining its columns:
-```
+```sql
 CREATE TABLE table_name (
   column1 datatype,
   column2 datatype,
@@ -46,7 +46,7 @@ CREATE TABLE table_name (
 
 ### `ALTER`
 Used for altering tables including adding and dropping columns and modifying their datatypes
-```
+```sql
 ALTER TABLE table_name
 ADD COLUMN column_name data_type column_constraint;
 
@@ -63,13 +63,13 @@ RENAME COLUMN current_column_name TO new_column_name;
 
 ### `TRUNCATE`
 Used for deleting data in a table but not the table itself. This will delete all the rows in a table, but not the table itself.
-```
+```sql
 TRUNCATE TABLE table_name IMMEDIATE;
 ```
 
 ### `DROP`
 Used for deleting tables.
-```
+```sql
 DROP TABLE table_name;
 ```
 
@@ -89,14 +89,14 @@ Use _ to replace special characters, such as brackets, e.g. `Breed (dominant bre
 
 ### Querying column names with mixed cases
 Use double quotes to specify mixed-case column names, e.g.
-```
+```sql
   SELECT "Id" from DOGS
 ```
 is valid, whereas searching for an "ID" column will find nothing.
 
 ### Splitting queries into multiple lines
 Use backslash `\` to split queries into multiple lines, e.g.
-```
+```sql
   %sql SELECT "Id", "Name_of_Dog", \
     from dogs \
     where "Name_of_Dog" = 'Huggy'
