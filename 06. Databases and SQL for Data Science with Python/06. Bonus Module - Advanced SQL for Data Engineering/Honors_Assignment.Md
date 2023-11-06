@@ -67,7 +67,7 @@ SELECT * FROM School_Icon;
 | Agustin Lara Elementary Academy	| Weak
 | Air Force Academy High School	| Weak
 | Albany Park Multicultural Academy	| Weak
-| Albert G Lane Technical High School	vWeak
+| Albert G Lane Technical High School	| Weak
 | Albert R Sabin Elementary Magnet School	| Weak
 | Alcott High School for the Humanities	| Weak
 | Alessandro Volta Elementary School	| Weak
