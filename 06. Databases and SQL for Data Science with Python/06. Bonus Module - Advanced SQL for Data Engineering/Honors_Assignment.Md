@@ -43,4 +43,34 @@ WHERE C.LOCATION_DESCRIPTION LIKE '%SCHOOL%'
 | HK577020	| NARCOTICS	| POSS: HEROIN(WHITE)	| SCHOOL PUBLIC GROUNDS	| Rogers Park |
 | HS305355	| NARCOTICS	| MANU/DEL:CANNABIS 10GM OR LESS	| SCHOOL PUBLIC BUILDING	| Brighton Park |
 | HT315369	| ASSAULT	| PRO EMP HANDS NO/MIN INJURY	SCHOOL | PUBLIC GROUNDS	East | Garfield Park |
-| HR585012	| CRIMINAL TRESPASS	| TO LAND	SCHOOL PUBLIC GROUNDS	| Ashburn |
+| HR585012	| CRIMINAL TRESPASS	| TO LAND | SCHOOL PUBLIC GROUNDS	| Ashburn |
+
+## Exercise 2, Question 1
+
+Write and execute a SQL statement that returns just the school name and leaders' icon from the view
+
+```sql
+CREATE VIEW School_Icon
+AS SELECT NAME_OF_SCHOOL AS "Name", Leaders_Icon AS "Icon"
+FROM CHICAGO_PUBLIC_SCHOOLS;
+
+SELECT * FROM School_Icon;
+```
+
+### Output
+
+| Name	| Icon
+| --- | --- |
+| Abraham Lincoln Elementary School	| Weak
+| Adam Clayton Powell Paideia Community Academy Elementary School	| Weak
+| Adlai E Stevenson Elementary School	| Weak
+| Agustin Lara Elementary Academy	| Weak
+| Air Force Academy High School	| Weak
+| Albany Park Multicultural Academy	| Weak
+| Albert G Lane Technical High School	vWeak
+| Albert R Sabin Elementary Magnet School	| Weak
+| Alcott High School for the Humanities	| Weak
+| Alessandro Volta Elementary School	| Weak
+| Alexander Graham Bell Elementary School	| Weak
+| Alexander Graham Elementary School	| Weak
+.....	
