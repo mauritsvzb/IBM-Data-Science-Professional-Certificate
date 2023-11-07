@@ -32,7 +32,7 @@ To replace missing values, use
 dataframe.replace(missing_value, new_value)
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280967446-b749e9a1-debf-48c9-bbd8-25f9cbc749c2.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280967446-b749e9a1-debf-48c9-bbd8-25f9cbc749c2.png" width="500" />
 
 ## Correcting Data Types
 ### Identifying Data Types
@@ -63,7 +63,7 @@ The following are ways to normalise data, and each type has its own use case.
 df['column'] = df['column']/df['column'].max()
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280968144-c67aae77-5a68-44b4-9e50-153d6e3ddb50.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280968144-c67aae77-5a68-44b4-9e50-153d6e3ddb50.png" width="500" />
 
 
 ### Min-Max
@@ -91,7 +91,7 @@ group_names = ['Low', 'Medium', 'High']
 df['price_binned'] = pd.cut(df['price'] bins, labels=group_names, include_lowest=True)
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280968884-f6c4c80c-edc8-4ad8-8855-f5495d1b7650.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280968884-f6c4c80c-edc8-4ad8-8855-f5495d1b7650.png" width="500" />
 
 Note that histograms are a good visualization for data split into bins
 
@@ -106,50 +106,50 @@ pandas.get_dummies()
 
 E.g. for a column 'fuel' with values of 'petrol' and 'diesel', the following code will create 2 columns called 'petrol' and 'diesel', and assign 0s and 1s in each row depending on which value appeared in the 'fuel' column.
 
-```
+```python
 pd.get_dummies(df['fuel'])
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280970170-c176ac5d-b693-4ea9-861d-491801d6a02d.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280970170-c176ac5d-b693-4ea9-861d-491801d6a02d.png" width="500" />
 
 
 ### Grouping Data
 #### groupby Method
 The Pandas method
 
-```
+```python
 dataframe.groupby()
 ```
 
 can be applied on categorical variables, and groups the data into categories. An aggregate function, e.g. `.mean()` can also be applied. For example:
 
-```
+```python
 df_test = df[['drive_wheels', 'body_style', 'price']]
 
 df_grp = df_test.groupby(['drive_wheels', 'body_style'], as_index = False).mean()
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280970292-04782e03-2a2a-468f-874c-38089374a638.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280970292-04782e03-2a2a-468f-874c-38089374a638.png" width="500" />
 
 
 #### `pivot` Method
 The Pandas `pivot` method can be used to show 1 variable displayed along the columns and the other variables displayed along the rows, and the syntax is as follows:
 
-```
+```python
 df_pivot = df.pivot(index = 'drive_wheels', columns = 'body_style')
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280970529-b0c61d95-adeb-42b4-bf7e-0029cb3f2d60.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280970529-b0c61d95-adeb-42b4-bf7e-0029cb3f2d60.png" width="500" />
 
 A useful way to visualise this is by using a heatmap, so using matplotlib:
 
-```
+```python
 import matplotlib.pyplot as plt
 plt.pcolor(df_pivot, cmap = 'RdBu')
 plt.colorbar()
 plt.show()
 ```
 
-<img src="https://user-images.githubusercontent.com/13508894/280970731-03a1e37c-674f-4652-bf04-1dceefa5e869.png" width="100" />
+<img src="https://user-images.githubusercontent.com/13508894/280970731-03a1e37c-674f-4652-bf04-1dceefa5e869.png" width="500" />
 
 
