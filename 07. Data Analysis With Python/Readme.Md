@@ -7,7 +7,7 @@ This course involves using Python to explore many different types of data. It co
 * [Importing datasets](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/07.%20Data%20Analysis%20With%20Python/01.%20Importing%20Datasets)
   * Understanding the data
   * Importing and exporting data in Python
-* [Data wrangling}(https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/07.%20Data%20Analysis%20With%20Python/02.%20Data%20Wrangling)
+* [Data wrangling](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/07.%20Data%20Analysis%20With%20Python/02.%20Data%20Wrangling)
   * Identifying and handling missing values
   * Data formatting
   * Data normalization
