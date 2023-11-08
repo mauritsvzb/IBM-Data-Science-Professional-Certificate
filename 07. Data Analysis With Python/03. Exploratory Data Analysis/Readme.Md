@@ -41,4 +41,4 @@ To generate this in Python, use the chi square contingency function in the scipy
 scipy.stats.chi2_contingency(cont_table, correction=True)
 ```
 
-The function will print out the Chi-square test value, the P-value, and a degree of freedom. For details, see the documentation.
+The function will print out the Chi-square test value, the P-value, and a degree of freedom. For details, see the [documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html).
