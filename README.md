@@ -45,7 +45,8 @@ The following Python libraries were used throughout the certification:
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/bbac0c5c-29b8-473a-a3ce-87e399aab755.jpeg" width="83" />
 
 # 📂 Projects
-* Extracting and Visualizing Stock Data
+* [Extracting and Visualizing Stock Data](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/05.%20Python%20Project%20for%20Data%20Science/Final%20Assignment%20-%20Extracting%20and%20Visualizing%20Stock%20Data.ipynb)
+* [Chicago Census, Crime, and School Data Analysis using SQL](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/06.%20Databases%20and%20SQL%20for%20Data%20Science%20with%20Python/05.%20Course%20Assignment/DB0201EN-PeerAssign-v5_SQLite.ipynb)
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
