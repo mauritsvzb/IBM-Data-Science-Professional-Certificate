@@ -38,3 +38,5 @@ This course involves using Python to explore many different types of data. It co
 
 ## 🏆 Certificates
 To verify the certificates, click the images to follow the links:
+
+[<img src="https://user-images.githubusercontent.com/13508894/282879035-6c5bf8e2-6210-4fc5-895c-70a0df29118a.png" width="550">](https://www.coursera.org/account/accomplishments/verify/82T45JECYS9C)[<img src="https://user-images.githubusercontent.com/13508894/282879314-43fb4e3d-8359-4d5f-8966-2abcb3a9b9ce.png" width="430">](https://www.credly.com/badges/9c89a9ec-07b2-40e9-8224-c81bef53c71b/public_url)
