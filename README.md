@@ -49,7 +49,7 @@ The following Python libraries were used throughout the certification:
 * [Chicago Census, Crime, and School Data Analysis using SQL](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/06.%20Databases%20and%20SQL%20for%20Data%20Science%20with%20Python/05.%20Course%20Assignment/DB0201EN-PeerAssign-v5_SQLite.ipynb)
 * [House Price Predictions](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/07.%20Data%20Analysis%20With%20Python/Final%20Assignment%20-%20House%20Price%20Predictions.ipynb)
 * [Analyzing the Impact of Recession on Automobile Sales (Part 1) - Create visualizations using Matplotib, Seaborn and Folium](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/08.%20Data%20Visualization%20with%20Python/Analyzing%20the%20Impact%20of%20Recession%20on%20Automobile%20Sales%20(Part%201)%20-%20Create%20visualizations%20using%20Matplotib%2C%20Seaborn%20and%20Folium.ipynb)
-* 
+* [Analyzing the Impact of Recession on Automobile Sales (Part 2) - Create Dashboard using Plotly and Dash](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/08.%20Data%20Visualization%20with%20Python/Analyzing%20the%20Impact%20of%20Recession%20on%20Automobile%20Sales%20(Part%202)%20-%20Create%20Dashboard%20using%20Plotly%20and%20Dash.Rmd)
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
