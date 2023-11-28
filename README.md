@@ -51,5 +51,3 @@ The following Python libraries were used throughout the certification:
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
-
-![152701606-b83fee28-12d1-4fe4-9618-d552f8adcb11](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/73071b75-eaa0-45bb-8345-c543ee1ab6c5)
