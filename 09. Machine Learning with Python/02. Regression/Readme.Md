@@ -64,4 +64,20 @@ To calculate the accuracy of our regression model, we can just compare the actua
 
 In a general sense, when you test with a dataset in which you know the target value for each data point, you're able to obtain a percentage of accurate predictions for the model. This evaluation approach would most likely have a high training accuracy and the low out-of-sample accuracy, since the model knows all of the testing data points from the training.
 
+## Train/Test Split
+One way to improve the low out-of-sample accuracy is to use another evaluation approach called train/test split. Train/test split involves splitting the dataset into training and testing sets respectively, which are mutually exclusive. After which, you train with the training set and test with the testing set.
+
+* In this approach, we select a portion of our dataset for training, for example, row zero to five, and the rest is used for testing, for example, row six to nine.
+* The model is built on the training set.
+* Then, the test feature set is passed to the model for prediction.
+* Finally, the predicted values for the test set are compared with the actual values of the testing set.
+
+This will provide a more accurate evaluation on out-of-sample accuracy because the testing dataset is not part of the dataset that has been used to train the data. It is more realistic for real-world problems. This means that we know the outcome of each data point in the dataset, making it great to test with. Since this data has not been used to train the model, the model has no knowledge of the outcome of these data points. So, in essence, it's truly out-of-sample testing. However, the model must also be trained with the testing set afterwards, so that no potentially valuable data is lost.
+
+The issue with train/test split is that it's highly dependent on the datasets on which the data was trained and tested. The variation of this causes train/test split to have a better out-of-sample prediction than training and testing on the same dataset, but it still has some problems due to this dependency.
+
+<img src="https://private-user-images.githubusercontent.com/13508894/287227648-67427e1f-c329-475b-8d9b-94c90de07947.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MjQ1NjgsIm5iZiI6MTcwMTQyNDI2OCwicGF0aCI6Ii8xMzUwODg5NC8yODcyMjc2NDgtNjc0MjdlMWYtYzMyOS00NzViLThkOWItOTRjOTBkZTA3OTQ3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA5NTEwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyMWQ3OGE0ZjRhY2RiMTU0MDU1M2FiOTAyOTljZmZiNmRlN2JjOTNjNzA4OTUyNmY1MjJhZGUxOGEyMmQ2MWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.o2cJLuqJsYp9SRVFPhWfHeXHj0_PIoYDLCYgRtl-rug" width="600" />
+
+
+
 
