@@ -78,6 +78,17 @@ The issue with train/test split is that it's highly dependent on the datasets on
 
 <img src="https://private-user-images.githubusercontent.com/13508894/287227648-67427e1f-c329-475b-8d9b-94c90de07947.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MjQ1NjgsIm5iZiI6MTcwMTQyNDI2OCwicGF0aCI6Ii8xMzUwODg5NC8yODcyMjc2NDgtNjc0MjdlMWYtYzMyOS00NzViLThkOWItOTRjOTBkZTA3OTQ3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA5NTEwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyMWQ3OGE0ZjRhY2RiMTU0MDU1M2FiOTAyOTljZmZiNmRlN2JjOTNjNzA4OTUyNmY1MjJhZGUxOGEyMmQ2MWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.o2cJLuqJsYp9SRVFPhWfHeXHj0_PIoYDLCYgRtl-rug" width="800" />
 
+## K-Fold Cross Validation
+Another evaluation model, called K-fold cross-validation, resolves most of these issues. To fix a high variation that results from a dependency, you can just average it.
 
+If we have K=4 folds, then we split up the dataset into 4.
+In the first fold for example, we use the first 25 percent of the dataset for testing and the rest for training.
+The model is built using the training set and is evaluated using the test set.
+Then, in the next round or in the second fold, the second 25 percent of the dataset is used for testing and the rest for training the model.
+Again, the accuracy of the model is calculated.
+Repeat for all folds, then the result of all four evaluations are averaged. That is, the accuracy of each fold is then averaged, keeping in mind that each fold is distinct, where no training data in one fold is used in another.
+K-fold cross-validation in its simplest form performs multiple train/test splits, using the same dataset where each split is different. Then, the result is average to produce a more consistent out-of-sample accuracy.
+
+<img src="https://private-user-images.githubusercontent.com/13508894/287260196-b1203b1e-b4e7-44f2-bbe0-853068bcacbf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzI5ODgsIm5iZiI6MTcwMTQzMjY4OCwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjAxOTYtYjEyMDNiMWUtYjRlNy00NGYyLWJiZTAtODUzMDY4YmNhY2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMTEyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3NGIwMjhlOTNiYjYyMjFhZTFmMTgyZTY3M2EyMjVlNzNjYTM3NTBmZDlmNmUxMDVjY2I4NGYyMDNjYzc5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.bQmIaYh8lmunR0y8qS6jkUnSWydnshbj122WeHxE2ho" width="800" />
 
 
