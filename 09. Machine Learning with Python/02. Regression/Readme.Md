@@ -91,4 +91,37 @@ K-fold cross-validation in its simplest form performs multiple train/test splits
 
 <img src="https://private-user-images.githubusercontent.com/13508894/287260196-b1203b1e-b4e7-44f2-bbe0-853068bcacbf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzI5ODgsIm5iZiI6MTcwMTQzMjY4OCwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjAxOTYtYjEyMDNiMWUtYjRlNy00NGYyLWJiZTAtODUzMDY4YmNhY2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMTEyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3NGIwMjhlOTNiYjYyMjFhZTFmMTgyZTY3M2EyMjVlNzNjYTM3NTBmZDlmNmUxMDVjY2I4NGYyMDNjYzc5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.bQmIaYh8lmunR0y8qS6jkUnSWydnshbj122WeHxE2ho" width="800" />
 
+## Evaluation Metrics in Regression Models",
+Evaluation metrics are used to explain the performance of a model, and they provide a key role in the development of a model as it provides insight to areas that require improvement In the context of regression, the error of the model is the difference between the data points and the trend line predicted by the algorithm. Since there are multiple data points, an error can be determined in multiple ways.
+
+<img src="https://private-user-images.githubusercontent.com/13508894/287262918-f6f884c5-46c2-436f-94ec-ff290026e134.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzM3NjEsIm5iZiI6MTcwMTQzMzQ2MSwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjI5MTgtZjZmODg0YzUtNDZjMi00MzZmLTk0ZWMtZmYyOTAwMjZlMTM0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMjQyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyOWRhZDI3MjJlYTRjMjg3OTllYmY1MGJkNGFlNzE1NTdlNWUyMWQ3ZmRlNzBiZjQ3NzkzYzM4YzU4ZGFhNmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.pxB98FA3GTT3hK9zKZjXvUUU38fhpXmV3AfkyCFGIPM
+" width="800" />
+
+Each of the following metrics can be used for quantifying of your prediction. The choice of metric completely depends on the type of model, the data type, and domain of knowledge.
+
+Mean Absolute Error (MAE)
+Mean Absolute Error is the mean of the absolute value of the errors. This is the easiest of the metrics to understand, since it's just the average error.
+
+<img src="https://private-user-images.githubusercontent.com/13508894/287266070-0c61891a-c7d9-404c-9fbb-88cffcf95633.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzQ2NTksIm5iZiI6MTcwMTQzNDM1OSwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjYwNzAtMGM2MTg5MWEtYzdkOS00MDRjLTlmYmItODhjZmZjZjk1NjMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMzkxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAzYzkxMGRiMGM2M2UwOGNkNzVmZGVhMzlmMjMzMzk1NzdhM2M5YzE2YTg5N2NkNWZjZWMyY2ZlOTc5MWU2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4Lj2tS2n7_UWFOlbEVYLAVZPItEOgDGLlpolwL9d4oM" width="400" />
+
+Mean Squared Error (MSE)
+Mean Squared Error is the mean of the squared error. It's more popular than Mean Absolute Error because the focus is geared more towards large errors. This is due to the squared term, exponentially increasing larger errors in comparison to smaller ones.
+
+error_def
+
+Root Mean Squared Error (RMSE)
+Root Mean Squared Error is the square root of the mean squared error. This is one of the most popular of the evaluation metrics because Root Mean Squared Error is interpretable in the same units as the response vector or Y units, making it easy to relate its information.
+
+error_def
+
+Relative Absolute Error (RAE)
+Relative absolute error, also known as residual sum of square, where $\bar{y} is a mean value of y, takes the total absolute error and normalizes it by dividing by the total absolute error of the simple predictor.
+
+error_def
+
+Relative Squared Error (RSE)
+Relative squared error is very similar to relative absolute error, but is widely adopted by the data science community as it is used for calculating R^2. R^2 is not an error per say but is a popular metric for the accuracy of your model. It represents how close the data values are to the fitted regression line. The higher the R^2, the better the model fits your data.
+
+error_def
+
 
