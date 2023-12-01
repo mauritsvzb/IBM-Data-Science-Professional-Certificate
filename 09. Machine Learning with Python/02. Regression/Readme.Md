@@ -36,7 +36,7 @@ Sometimes, the trend of data is not really linear, and looks curvy. In this case
 Non-linear regression is a method to model the non-linear relationship between the independent variables `X` and the dependent variable `Y`. Essentially any relationship that is not linear can be termed as non-linear, and is usually represented by the polynomial of `k` degrees (maximum power of `X`). Non-linear functions can have elements like exponentials, logarithms, fractions, and so on.
 
 ## Model Evaluation in Regression Models
-When considering evaluation models, we clearly want to choose the one that will give us the most accurate results. So, the question is, how can we calculate the accuracy of our model? In other words, how much can we trust this model for prediction of an unknown sample using a given dataset and having built a model such as linear regression?
+When considering evaluation models, we clearly want to choose the model that will give us the most accurate results. So, the question is, how can we calculate the accuracy of our model? In other words, how much can we trust this model for prediction of an unknown sample using a given dataset and having built a model such as linear regression?
 
 There are two types of evaluation approaches that can be used to achieve this goal. These approaches are train and test on the same dataset and train/test split.
 
