@@ -1,1 +1,66 @@
+# Regression
+## Definition
+Regression is the process of predicting a continuous value, and the goal of regression is to build a model to accurately predict an unknown case.
+
+In regression there are two types of variables:
+
+* A dependent variable (`Y`)- the state, target, or final goal we study and try to predict
+* One or more independent variables (`X`) - explanatory variables that can be seen as the causes of those states
+A regression model relates `Y`, the dependent variable to a function of `X` i.e. the independent variables. The key point in the regression is that our dependent value should be continuous and cannot be a discrete value. However, the independent variable, or variables, can be measured on either a categorical or continuous measurement scale.
+
+## Types of Regression
+There are 2 major types of regression models:
+
+* Simple regression
+* Multiple regression
+Linearity of regression is based on the nature of relationship between independent and dependent variables. When there is only one independent variable (`X`), the process is simple regression. When there is more than one independent variable present, the process is called multiple linear regression.
+
+### Simple Regression
+Simple regression is when one independent variable is used to estimate a dependent variable. It can be either linear or non-linear. For example, predicting CO2 emission using the variable of engine size.
+
+* Independent Variable (`X`): Engine size
+* Dependent Variable (`Y`): CO2 emission
+
+### Multiple Regression
+If we were to predict CO2 emission using engine size and the number of cylinders in any given car, there are 2 dependent variables, so this is multiple regression.
+
+* Independent Variables (`X`): Engine size, Number of Cylinders
+* Dependent Variable (`Y`): CO2 emission
+Again, depending on the relation between dependent and independent variables it can be either linear or non-linear regression.
+
+## Types of Non-Linear Regression
+### Polynomial Regression
+Sometimes, the trend of data is not really linear, and looks curvy. In this case we can use Polynomial regression methods. In fact, many different regressions exist that can be used to fit whatever the dataset looks like, such as quadratic, cubic, and so on, and it can go on and on to infinite degrees. In essence, we can call all of these, polynomial regression, where the relationship between the independent variable `X` and the dependent variable `Y` is modeled as an nth degree polynomial in x.
+
+### Non-Linear Regression
+Non-linear regression is a method to model the non-linear relationship between the independent variables `X` and the dependent variable `Y`. Essentially any relationship that is not linear can be termed as non-linear, and is usually represented by the polynomial of `k` degrees (maximum power of `X`). Non-linear functions can have elements like exponentials, logarithms, fractions, and so on.
+
+## Model Evaluation in Regression Models
+When considering evaluation models, we clearly want to choose the one that will give us the most accurate results. So, the question is, how can we calculate the accuracy of our model? In other words, how much can we trust this model for prediction of an unknown sample using a given dataset and having built a model such as linear regression?
+
+There are two types of evaluation approaches that can be used to achieve this goal. These approaches are train and test on the same dataset and train/test split.
+
+To compare the two approaches, we consider two main metrics of prediction: training accuracy and out-of-sample accuracy.
+
+* Training accuracy is the percentage of correct predictions that the model makes when using the test dataset. However, a high training accuracy isn't necessarily a good thing. For instance, having a high training accuracy may result in an over-fit the data. This means that the model is overly trained to the dataset, which may capture noise and produce a non-generalized model.
+* Out-of-sample accuracy is the percentage of correct predictions that the model makes on data that the model has not been trained on. Doing a train and test on the same dataset will most likely have low out-of-sample accuracy due to the likelihood of being over-fit. It's important that our models have high out-of-sample accuracy because the purpose of our model is, of course, to make correct predictions on unknown data.
+
+### Train and test on the same dataset
+Consider the first approach, where we select a portion of our dataset for testing. Essentially, the name of this approach says it all. The model is trained on the entire dataset, then tested using a portion of the same dataset.
+
+For instance, assume that we have 10 records in our dataset.
+
+* We use the entire dataset for training, and we build a model using this training set.
+* Now, we select a small portion of the dataset, such as row number six to nine, but without the labels. This set is called a test set, which has the labels, but the labels are not used for prediction and is used only as ground truth. The labels are called actual values of the test set.
+* Now we pass the feature set of the testing portion to our built model and predict the target values.
+* Finally, we compare the predicted values by our model with the actual values in the test set. This indicates how accurate our model actually is.
+
+There are different metrics to report the accuracy of the model, but most of them work generally based on the similarity of the predicted and actual values.
+
+To calculate the accuracy of our regression model, we can just compare the actual values, `y`, with the predicted values, . The error of the model is calculated as the average difference between the predicted and actual values for all the rows. We can write this error as an equation:
+
+
+
+In a general sense, when you test with a dataset in which you know the target value for each data point, you're able to obtain a percentage of accurate predictions for the model. This evaluation approach would most likely have a high training accuracy and the low out-of-sample accuracy, since the model knows all of the testing data points from the training.
+
 
