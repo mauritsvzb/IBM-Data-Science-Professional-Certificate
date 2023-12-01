@@ -57,8 +57,9 @@ For instance, assume that we have 10 records in our dataset.
 
 There are different metrics to report the accuracy of the model, but most of them work generally based on the similarity of the predicted and actual values.
 
-To calculate the accuracy of our regression model, we can just compare the actual values, `y`, with the predicted values, . The error of the model is calculated as the average difference between the predicted and actual values for all the rows. We can write this error as an equation:
+To calculate the accuracy of our regression model, we can just compare the actual values, `y`, with the predicted values, `ŷ`. The error of the model is calculated as the average difference between the predicted and actual values for all the rows. We can write this error as an equation:
 
+<img src="https://private-user-images.githubusercontent.com/13508894/287226595-ee41eb67-8164-4548-907a-8e439541c5d6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MjQzMjEsIm5iZiI6MTcwMTQyNDAyMSwicGF0aCI6Ii8xMzUwODg5NC8yODcyMjY1OTUtZWU0MWViNjctODE2NC00NTQ4LTkwN2EtOGU0Mzk1NDFjNWQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDA5NDcwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk2ZWZkNzgwMGZmZjk5NDMxNzUwNDFiNTBjZGJhYTAzNTExMmQxYTk1NjgzN2JiZDc4MmNjMWZlZmI2OWIxZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.6GB1FuxVGn6h6WBqisvKpEnsBldA6e3gNtVFa3hZKFo" width="600" />
 
 
 In a general sense, when you test with a dataset in which you know the target value for each data point, you're able to obtain a percentage of accurate predictions for the model. This evaluation approach would most likely have a high training accuracy and the low out-of-sample accuracy, since the model knows all of the testing data points from the training.
