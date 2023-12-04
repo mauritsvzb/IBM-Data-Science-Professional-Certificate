@@ -19,4 +19,4 @@ This course teaches how to present and visualize complex data in a manner that m
 ## 🏆 Certificates
 To verify the certificates, click the images to follow the links:
 
-[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/8c690d6e-c38b-40e7-a44d-51136b5e0575.png" width="550">](https://www.coursera.org/account/accomplishments/verify/8M9WPSLHYZV6)[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/61aeb43f-3dfb-4a62-92b8-4edeb33ccfa7.png" width="430">](https://www.credly.com/badges/84a3f5a2-f88c-429c-a459-30c8067cfbf3/public_url)
+[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/8c690d6e-c38b-40e7-a44d-51136b5e0575.png" width="550">](https://www.coursera.org/account/accomplishments/verify/8M9WPSLHYZV6) [<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/61aeb43f-3dfb-4a62-92b8-4edeb33ccfa7.png" width="430">](https://www.credly.com/badges/84a3f5a2-f88c-429c-a459-30c8067cfbf3/public_url)
