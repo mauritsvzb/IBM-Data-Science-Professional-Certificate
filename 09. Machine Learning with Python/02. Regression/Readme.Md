@@ -101,18 +101,18 @@ Each of the following metrics can be used for quantifying of your prediction. Th
 Mean Absolute Error (MAE)
 Mean Absolute Error is the mean of the absolute value of the errors. This is the easiest of the metrics to understand, since it's just the average error.
 
-<img src="https://private-user-images.githubusercontent.com/13508894/287266070-0c61891a-c7d9-404c-9fbb-88cffcf95633.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzQ2NTksIm5iZiI6MTcwMTQzNDM1OSwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjYwNzAtMGM2MTg5MWEtYzdkOS00MDRjLTlmYmItODhjZmZjZjk1NjMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMzkxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAzYzkxMGRiMGM2M2UwOGNkNzVmZGVhMzlmMjMzMzk1NzdhM2M5YzE2YTg5N2NkNWZjZWMyY2ZlOTc5MWU2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4Lj2tS2n7_UWFOlbEVYLAVZPItEOgDGLlpolwL9d4oM" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/557547c3-0c4a-4b0b-9579-916e997cd79e.png" width="300" />
 
 Mean Squared Error (MSE)
 Mean Squared Error is the mean of the squared error. It's more popular than Mean Absolute Error because the focus is geared more towards large errors. This is due to the squared term, exponentially increasing larger errors in comparison to smaller ones.
 
-<img src="https://private-user-images.githubusercontent.com/13508894/287266453-f1d56c46-a5ca-4554-a20b-8d88eab18451.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzQ3NjEsIm5iZiI6MTcwMTQzNDQ2MSwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjY0NTMtZjFkNTZjNDYtYTVjYS00NTU0LWEyMGItOGQ4OGVhYjE4NDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyNDEwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMzY2Q2NjI2MDUzZDc5Yzg1ODllMGIxYjNkMjdlNDQyOGVhZDI4YTU4Y2I3MDIwOTM2ZDk5MjAyMDczZjAxOTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.c4DR2anjERFfCqHRXOZJQqaCkXXSo2-paGGdbMpHzVM" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/1363fa92-902d-47a8-801c-82dd62f2b673.png" width="300" />
 
 
 Root Mean Squared Error (RMSE)
 Root Mean Squared Error is the square root of the mean squared error. This is one of the most popular of the evaluation metrics because Root Mean Squared Error is interpretable in the same units as the response vector or Y units, making it easy to relate its information.
 
-<img src="https://private-user-images.githubusercontent.com/13508894/287266783-340cbd89-3fcc-4b49-a3fc-4330c6df4816.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzQ4NDMsIm5iZiI6MTcwMTQzNDU0MywicGF0aCI6Ii8xMzUwODg5NC8yODcyNjY3ODMtMzQwY2JkODktM2ZjYy00YjQ5LWEzZmMtNDMzMGM2ZGY0ODE2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyNDIyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQzZDFlNGUxOGViNDBlNTA3MjVlYmE0MDkyZmExZjQ5ZmJkODQ4YTg3NjFjMmRmNzU3MjUwYmU3ZTIzYWFhZWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.mPEf3pGp25pA5WA5bbxnH_HlgQTsFkHXmZrD77lCzvI" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/89cd576e-a8a3-4720-a96f-2f49044d3765.png" width="300" />
 
 Relative Absolute Error (RAE)
 Relative absolute error, also known as residual sum of square, where $\bar{y} is a mean value of y, takes the total absolute error and normalizes it by dividing by the total absolute error of the simple predictor.
