@@ -59,7 +59,7 @@ There are different metrics to report the accuracy of the model, but most of the
 
 To calculate the accuracy of our regression model, we can just compare the actual values, `y`, with the predicted values, `ŷ`. The error of the model is calculated as the average difference between the predicted and actual values for all the rows. We can write this error as an equation:
 
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/cae73006-b280-455b-9448-7103e388a92e.png" width="800" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/f13dd5de-005a-4747-ac31-e8093000155d.png" width="800" />
 
 
 In a general sense, when you test with a dataset in which you know the target value for each data point, you're able to obtain a percentage of accurate predictions for the model. This evaluation approach would most likely have a high training accuracy and the low out-of-sample accuracy, since the model knows all of the testing data points from the training.
@@ -117,7 +117,7 @@ Root Mean Squared Error is the square root of the mean squared error. This is on
 Relative Absolute Error (RAE)
 Relative absolute error, also known as residual sum of square, where $\bar{y} is a mean value of y, takes the total absolute error and normalizes it by dividing by the total absolute error of the simple predictor.
 
-<img src="https://private-user-images.githubusercontent.com/13508894/287266996-2cc2d643-89df-403f-948a-9d035b995f05.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzQ4OTgsIm5iZiI6MTcwMTQzNDU5OCwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjY5OTYtMmNjMmQ2NDMtODlkZi00MDNmLTk0OGEtOWQwMzViOTk1ZjA1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyNDMxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVhNDkzN2NmM2VmNmU2ODI2YzQ4Y2YxNWM3YTgwMWU4NWMyMmY4OTNmYTc0ODdkNTI1NGJjYjhiZTI1Mjc5OGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.9cW8nzzJeLNgjrP40RLsRx9LPwZ_pyz9tKj4H8poHaw" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/f28778f5-ca4a-4b85-8a36-143a196f2740.png" width="300" />
 
 Relative Squared Error (RSE)
 Relative squared error is very similar to relative absolute error, but is widely adopted by the data science community as it is used for calculating R^2. R^2 is not an error per say but is a popular metric for the accuracy of your model. It represents how close the data values are to the fitted regression line. The higher the R^2, the better the model fits your data.
