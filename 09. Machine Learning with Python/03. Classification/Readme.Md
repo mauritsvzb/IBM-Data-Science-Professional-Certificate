@@ -14,7 +14,7 @@ Classification can also be used to predict the category to which a customer belo
 
 ## Module Scope
 This module will consider some of the many types of classification algorithms, such as 
-* k-nearest neighbor (KNN
+* k-nearest neighbor (KNN)
 * decision trees 
 * logistic regression
 * support vector machines (SVM)
@@ -33,8 +33,8 @@ In a classification problem, the K-Nearest Neighbors algorithm works as follows:
 4. Predict the response of the unknown data point using the most popular response value from the K-Nearest Neighbors
 
 There are 2 parts in this algorithm that might be confusing: 
-1. How to select the correct K
-2. How to compute the similarity between cases e.g., among customers
+1. How to select the correct K?
+2. How to compute the similarity between cases e.g., among customers?
 
 #### Start with second concern: how can we calculate the similarity between two data points? 
 Assume that we have two customers, customer one and customer two, and for a moment, assume that these two customers have only one feature, H. We can easily use a specific type of Minkowski distance to calculate the distance of these two customers, it is indeed the Euclidean distance. Distance of X_1 from X_2 is root of 34 minus 30 to power of two, which is four. 
@@ -49,13 +49,17 @@ We can also use the same distance matrix for multidimensional vectors. Of course
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/f0436028-03d6-476f-bbd4-a0a7f2ac9d15.png" width="400" />
 
-There are other dissimilarity measures as well that can be used for this purpose but as mentioned, it is highly dependent on datatype and also the domain that classification is done for it. 
+There are other dissimilarity measures as well that can be used for this purpose but it is highly dependent on datatype and also the domain that classification is done for it. 
 
 #### How to select the correct K?
-Assume that we want to find the class of the customer noted as question mark on the chart. What happens if we choose a very low value of K? Let's say, K equals one. The first nearest point would be blue, which is class one. This would be a bad prediction, since more of the points around it are magenta or class four. In fact, since its nearest neighbor is blue we can say that we capture the noise in the data or we chose one of the points that was an anomaly in the data. A low value of K causes a highly complex model as well, which might result in overfitting of the model. It means the prediction process is not generalized enough to be used for out-of-sample cases. Out-of-sample data is data that is outside of the data set used to train the model. In other words, it cannot be trusted to be used for prediction of unknown samples. It's important to remember that overfitting is bad, as we want a general model that works for any data, not just the data used for training. Now, on the opposite side of the spectrum, if we choose a very high value of K such as K equals 20, then the model becomes overly generalized. 
+Assume that we want to find the class of the customer noted as question mark on the chart. What happens if we choose a very low value of K? Let's say, K equals one. The first nearest point would be blue, which is class one. This would be a bad prediction, since more of the points around it are magenta or class four. In fact, since its nearest neighbor is blue we can say that we capture the noise in the data or we chose one of the points that was an anomaly in the data. 
 
-So, how can we find the best value for K? The general solution is to reserve a part of your data for testing the accuracy of the model. Once you've done so, choose K equals one and then use the training part for modeling and calculate the accuracy of prediction using all samples in your test set. Repeat this process increasing the K and see which K is best for your model. For example, in our case, K equals four will give us the best accuracy. 
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/b0989e08-167f-4dd3-9b0e-27cb54e82bde.png" width="400" />
 
-Nearest neighbors analysis can also be used to compute values for a continuous target. In this situation, the average or median target value of the nearest neighbors is used to obtain the predicted value for the new case. For example, assume that you are predicting the price of a home based on its feature set, such as number of rooms, square footage, the year it was built, and so on. You can easily find the three nearest neighbor houses of course not only based on distance but also based on all the attributes and then predict the price of the house as the medium of neighbors.
+A low value of K causes a highly complex model as well, which might result in overfitting of the model. It means the prediction process is not generalized enough to be used for out-of-sample cases. Out-of-sample data is data that is outside of the data set used to train the model. In other words, it cannot be trusted to be used for prediction of unknown samples. It's important to remember that overfitting is bad, as we want a general model that works for any data, not just the data used for training. Now, on the opposite side of the spectrum, if we choose a very high value of K such as K equals 20, then the model becomes overly generalized. So, how can we find the best value for K? The general solution is to reserve a part of your data for testing the accuracy of the model. Once you've done so, choose K equals one and then use the training part for modeling and calculate the accuracy of prediction using all samples in your test set. Repeat this process increasing the K and see which K is best for your model. For example, in our case, K equals four will give us the best accuracy. 
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/d6eb3422-849c-4386-b5ae-1e37fa890352.png" width="400" />
+
+Nearest neighbors analysis can also be used to compute values for a continuous target. In this situation, the average or median target value of the nearest neighbors is used to obtain the predicted value for the new case. For example, assume that you are predicting the price of a home based on its feature set, such as number of rooms, square footage, the year it was built, and so on. You can easily find the three nearest neighbor houses not only based on distance but also based on all the attributes and then predict the price of the house as the medium of neighbors.
 
 #### / ### Evaluation Metrics in Classification
