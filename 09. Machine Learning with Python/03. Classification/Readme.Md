@@ -13,4 +13,10 @@ Classifier models can be built for both binary classification and multi-class cl
 Classification can also be used to predict the category to which a customer belongs, for churn detection where we predict whether a customer switches to another provider or brand, or to predict whether or not a customer responds to a particular advertising campaign. Data classification has several applications in a wide variety of industries. Essentially, many problems can be expressed as associations between feature and target variables, especially when labelled data is available. This provides a broad range of applicability for classification. For example, classification can be used for email filtering, speech recognition, handwriting recognition, biometric identification, document classification and much more.
 
 ## Module Scope
-This module will consider some of the many types of classification algorithms, such as decision trees, k-nearest neighbor, logistic regression, and support vector machines. There are many types of classification algorithms.
+This module will consider some of the many types of classification algorithms, such as 
+* decision trees, 
+* k-nearest neighbor 
+* logistic regression
+* support vector machines
+
+There are many types of classification algorithms.
