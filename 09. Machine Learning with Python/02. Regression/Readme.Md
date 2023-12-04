@@ -94,8 +94,7 @@ K-fold cross-validation in its simplest form performs multiple train/test splits
 ## Evaluation Metrics in Regression Models",
 Evaluation metrics are used to explain the performance of a model, and they provide a key role in the development of a model as it provides insight to areas that require improvement In the context of regression, the error of the model is the difference between the data points and the trend line predicted by the algorithm. Since there are multiple data points, an error can be determined in multiple ways.
 
-<img src="https://private-user-images.githubusercontent.com/13508894/287262918-f6f884c5-46c2-436f-94ec-ff290026e134.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE0MzM3NjEsIm5iZiI6MTcwMTQzMzQ2MSwicGF0aCI6Ii8xMzUwODg5NC8yODcyNjI5MTgtZjZmODg0YzUtNDZjMi00MzZmLTk0ZWMtZmYyOTAwMjZlMTM0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjAxVDEyMjQyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyOWRhZDI3MjJlYTRjMjg3OTllYmY1MGJkNGFlNzE1NTdlNWUyMWQ3ZmRlNzBiZjQ3NzkzYzM4YzU4ZGFhNmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.pxB98FA3GTT3hK9zKZjXvUUU38fhpXmV3AfkyCFGIPM
-" width="800" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a440668f-ed60-4791-b5b3-5b8c40531394.png" width="800" />
 
 Each of the following metrics can be used for quantifying of your prediction. The choice of metric completely depends on the type of model, the data type, and domain of knowledge.
 
