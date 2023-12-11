@@ -152,7 +152,7 @@ Notice that in all these examples not only do we predict the class of each case,
 ### When is logistic regression suitable?
 * When the target field in your data is categorical, or specifically, is binary 
   * zero/one, yes/no, churn or no churn, positive/negative etc
-* If you need the probabilistic results
+* If you need the probabilistic results (linear regression provides predicted outcomes, but not their probabilities)
 * If your data is linearly separable
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/f0492a07-6bd0-4327-b808-e8c669f7e3e0.png" width="300" />
