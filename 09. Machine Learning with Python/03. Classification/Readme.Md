@@ -130,4 +130,29 @@ So, what is information gain? Information gain is the information that can incre
 
 Now, what is the next attribute after branching by the sex attribute? Well, as you can guess, we should repeat the process for each branch and test each of the other attributes to continue to reach the most pure leaves. 
 
+## Logistic Regression (classification context)
+We'll address 3 questions:
+1. What is logistic regression?
+2. What kind of problems can be solved by logistic regression?
+3. In which situations do we use logistic regression?
 
+### What is logistic regression
+
+Logistic regression is a statistical and machine learning technique for classifying records (binary or multiclass classification) of a dataset based on the values of the input fields. In logistic regression, independent variables should be continuous. If categorical, they should be dummy or indicator coded. 
+
+### Applications of logistic regression to predict:
+* The probability of a person having a heart attack within a specified time period (based on our knowledge of the person's age, sex, and body mass index)
+* The chance of mortality in an injured patient
+* Whether a patient has a given disease (such as diabetes based on observed characteristics of that patient such as weight, height, blood pressure, and results of various blood tests etc) 
+* In a marketing context, the likelihood of a customer purchasing a product or halting a subscription (as we've done in our churn example)
+* The probability of failure of a given process, system or product
+* The likelihood of a homeowner defaulting on a mortgage. 
+Notice that in all these examples not only do we predict the class of each case, we also measure the probability of a case belonging to a specific class. 
+
+### When is logistic regression suitable?
+* When the target field in your data is categorical, or specifically, is binary 
+  * zero/one, yes/no, churn or no churn, positive/negative etc
+* If you need the probabilistic results
+* If your data is linearly separable
+* If you need to understand the impact of a feature
+  * You can select the best features based on the statistical significance of the logistic regression model coefficients or parameters. That is, after finding the optimum parameters, a feature X with the weight Theta1 close to zero has a smaller effect on the prediction than features with large absolute values of Theta1. Indeed, it allows us to understand the impact an independent variable has on the dependent variable while controlling other independent variables. 
