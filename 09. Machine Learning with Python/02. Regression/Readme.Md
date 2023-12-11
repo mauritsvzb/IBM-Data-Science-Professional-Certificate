@@ -6,13 +6,14 @@ In regression there are two types of variables:
 
 * A dependent variable (`Y`)- the state, target, or final goal we study and try to predict
 * One or more independent variables (`X`) - explanatory variables that can be seen as the causes of those states
-A regression model relates `Y`, the dependent variable to a function of `X` i.e. the independent variables. The key point in the regression is that our dependent value should be continuous and cannot be a discrete value. However, the independent variable, or variables, can be measured on either a categorical or continuous measurement scale.
+A regression model relates `Y`, the dependent variable, to a function of `X` i.e. the independent variable(s). The key point in the regression is that our dependent value should be continuous and cannot be a discrete value. However, the independent variable, or variables, can be measured on either a categorical or continuous measurement scale.
 
 ## Types of Regression
 There are 2 major types of regression models:
 
 * Simple regression
 * Multiple regression
+
 Linearity of regression is based on the nature of relationship between independent and dependent variables. When there is only one independent variable (`X`), the process is simple regression. When there is more than one independent variable present, the process is called multiple linear regression.
 
 ### Simple Regression
