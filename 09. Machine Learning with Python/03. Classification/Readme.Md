@@ -21,7 +21,7 @@ This module will consider some of the many types of classification algorithms, s
 
 There are many more types of classification algorithms.
 
-### K-Nearest Neighbors algorithm
+## K-Nearest Neighbors algorithm
 The K-Nearest Neighbors algorithm is a classification algorithm that takes a bunch of labeled points and uses them to learn how to label other points. This algorithm classifies cases based on their similarity to other cases. In K-Nearest Neighbors, data points that are near each other are said to be neighbors. K-Nearest Neighbors is based on this paradigm. Similar cases with the same class labels are near each other. Thus, the distance between two cases is a measure of their dissimilarity. There are different ways to calculate the similarity or conversely, the distance or dissimilarity of two data points. For example, this can be done using Euclidean distance. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e92d7119-a083-41eb-b944-24d252c3623a.png" width="400" />
@@ -36,7 +36,7 @@ There are 2 parts in this algorithm:
 1. How to select the correct K?
 2. How to compute the similarity between cases e.g., among customers?
 
-#### Start with second concern: how can we calculate the similarity between two data points? 
+### Start with second concern: how can we calculate the similarity between two data points? 
 Assume that we have two customers, customer one and customer two, and for a moment, assume that these two customers have only one feature, H. We can easily use a specific type of Minkowski distance to calculate the distance of these two customers, it is indeed the Euclidean distance. Distance of X_1 from X_2 is root of 34 minus 30 to power of two, which is four. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c76ce80b-1047-436e-80c9-2949fc6e94f7.png" width="400" />
@@ -51,7 +51,7 @@ We can also use the same distance matrix for multidimensional vectors. Of course
 
 There are other dissimilarity measures as well that can be used for this purpose but it is highly dependent on datatype and also the domain that classification is done for it. 
 
-#### How to select the correct K?
+### How to select the correct K?
 Assume that we want to find the class of the customer noted as question mark on the chart. What happens if we choose a very low value of K? Let's say, K equals one. The first nearest point would be blue, which is class one. This would be a bad prediction, since more of the points around it are magenta or class four. In fact, since its nearest neighbor is blue we can say that we capture the noise in the data or we chose one of the points that was an anomaly in the data. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/b0989e08-167f-4dd3-9b0e-27cb54e82bde.png" width="400" />
@@ -62,14 +62,14 @@ A low value of K causes a highly complex model as well, which might result in ov
 
 Nearest neighbors analysis can also be used to compute values for a continuous target. In this situation, the average or median target value of the nearest neighbors is used to obtain the predicted value for the new case. For example, assume that you are predicting the price of a home based on its feature set, such as number of rooms, square footage, the year it was built, and so on. You can easily find the three nearest neighbor houses not only based on distance but also based on all the attributes and then predict the price of the house as the medium of neighbors.
 
-#### Evaluation Metrics in Classification
+### Evaluation Metrics in Classification
 
 Evaluation metrics explain the performance of a model. Evaluation metrics provide a key role in the development of a model, as they provide insight to areas that might require improvement. There are different model evaluation metrics but we just talk about three of them here, specifically: 
 * Jaccard index
 * F1-score 
 * Log Loss 
 
-##### Jaccard index (aka Jaccard similarity coefficient)
+#### Jaccard index (aka Jaccard similarity coefficient)
 Let’s say y shows the true labels of the churn dataset. And y ̂ shows the predicted values by our classifier. Then we can define Jaccard as the size of the intersection divided by the size of the union of two label sets (i.e., total sample size - size of intersection). For example, for a test set of size 10, with 8 correct predictions, or 8 intersections, the accuracy by the Jaccard index would be 0.66. If the entire set of predicted labels for a sample strictly matches with the true set of labels, then the subset accuracy is 1.0; otherwise it is 0.0. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/5f91cc5f-8d94-4794-b739-2dd05d3a22ad.png" width="600" />
@@ -78,19 +78,19 @@ Another way of looking at accuracy of classifiers is to look at a confusion matr
 
 Let's look at the first row. The first row is for customers whose actual churn value in the test set is 1. As you can calculate, out of 40 customers, the churn value of 15 of them is 1. And out of these 15, the classifier correctly predicted 6 of them as 1, and 9 of them as 0. This means that for 6 customers, the actual churn value was 1, in the test set, and the classifier also correctly predicted those as 1. However, while the actual label of 9 customers was 1, the classifier predicted those as 0, which is not very good. We can consider this as an error of the model for the first row. What about the customers with a churn value 0? Let’s look at the second row. It looks like there were 25 customers whose churn value was 0. The classifier correctly predicted 24 of them as 0, and one of them wrongly predicted as 1. So, it has done a good job in predicting the customers with a churn value of 0. A good thing about the confusion matrix is that it shows the model’s ability to correctly predict or separate the classes. In the specific case of a binary classifier, such as this example, we can interpret these numbers as the count of true positives, false negatives, true negatives, and false positives. Based on the count of each section, we can calculate the precision and recall of each label. Precision is a measure of the accuracy, provided that a class label has been predicted. It is defined by: precision = True Positive / (True Positive + False Positive). And Recall is the true positive rate. It is defined as: Recall = True Positive / (True Positive + False Negative). So, we can calculate the precision and recall of each class. 
 
-##### F1-score
+#### F1-score
 Now we’re in the position to calculate the F1 scores for each label, based on the precision and recall of that label. 
 
 The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (which represents perfect precision and recall) and its worst at 0. It is a good way to show that a classifier has a good value for both recall and precision. It is defined using the F1-score equation. For example, the F1-score for class 0 (i.e. churn=0), is 0.83, and the F1-score for class 1 (i.e. churn=1), is 0.55. And finally, we can tell the average accuracy for this classifier is the average of the F1-score for both labels, which is 0.72 in our case. Please notice that both Jaccard and F1-score can be used for multi-class classifiers as well. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/43b6bb70-4a1b-4d0b-bc1c-37ed55d49c88.png" width="600" />
 
-##### Log loss
+#### Log loss
 Sometimes, the output of a classifier is the probability of a class label, instead of the label. For example, in logistic regression, the output can be the probability of customer churn, i.e., yes (or equals to 1). This probability is a value between 0 and 1. Logarithmic loss (also known as Log loss) measures the performance of a classifier where the predicted output is a probability value between 0 and 1. So, for example, predicting a probability of 0.13 when the actual label is 1, would be bad and would result in a high log loss. We can calculate the log loss for each row using the log loss equation, which measures how far each prediction is, from the actual label. Then, we calculate the average log loss across all rows of the test set. It is obvious that ideal classifiers have progressively smaller values of log loss. So, the classifier with lower log loss has better accuracy. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/2580a43d-adc1-4404-adab-98b16f0754fa.png" width="600" />
 
-### Decision Trees
+## Decision Trees
 Imagine that you're a medical researcher compiling data for a study. You've already collected data about a set of patients all of whom suffered from the same illness. During their course of treatment, each patient responded to one of two medications. We call them drug A and drug B. Part of your job is to build a model to find out which drug might be appropriate for a future patient with the same illness. The feature sets of this dataset are age, gender, blood pressure, and cholesterol of our group of patients and the target is the drug that each patient responded to. It is a sample of binary classifiers, and you can use the training part of the data set to build a decision tree and then use it to predict the class of an unknown patient. In essence, to come up with a decision on which drug to prescribe to a new patient. Let's see how a decision tree is built for this dataset. 
 
 Decision trees are built by splitting the training set into distinct nodes, where one node contains all of or most of one category of the data. If we look at the diagram here, we can see that it's a patient's classifier. So as mentioned, we want to prescribe a drug to a new patient, but the decision to choose drug A or B will be influenced by the patient's situation. We start with age, which can be young, middle aged or senior. If the patient is middle aged, then we'll definitely go for drug B. On the other hand, if he has a young or a senior patient, will need more details to help us determine which drug to prescribe. The additional decision variables can be things such as cholesterol levels, gender or blood pressure. For example, if the patient is female, then we will recommend drug A, but if the patient is male, then will go for drug B. As you can see, decision trees are about testing an attribute and branching the cases based on the result of the test. Each internal node corresponds to a test, and each branch corresponds to a result of the test, and each leaf node assigns a patient to a class. 
@@ -105,7 +105,7 @@ How to build such a decision tree? A decision tree can be constructed by conside
 
 After building this tree, you can use it to predict the class of unknown cases; or in our case, the proper drug for a new patient based on his or her characteristics
 
-#### Building Decision Trees
+### Building Decision Trees
 Decision trees are built using recursive partitioning to classify the data. Let's say we have 14 patients in our data set, the algorithm chooses the most predictive feature to split the data on. What is important in making a decision tree, is to determine which attribute is the best or more predictive to split data based on the feature. Let's say we pick cholesterol as the first attribute to split data, it will split our data into two branches. As you can see, if the patient has high cholesterol we cannot say with high confidence that drug B might be suitable for him. Also, if the patient's cholesterol is normal, we still don't have sufficient evidence or information to determine if either drug A or drug B is in fact suitable. It is a sample of bad attributes selection for splitting data. 
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/5f05ef0b-f266-4c9b-9d37-d6592ccfb8e4.png" width="600" />
