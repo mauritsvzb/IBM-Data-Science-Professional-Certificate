@@ -154,5 +154,8 @@ Notice that in all these examples not only do we predict the class of each case,
   * zero/one, yes/no, churn or no churn, positive/negative etc
 * If you need the probabilistic results
 * If your data is linearly separable
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/f0492a07-6bd0-4327-b808-e8c669f7e3e0.png" width="300" />
+
 * If you need to understand the impact of a feature
   * You can select the best features based on the statistical significance of the logistic regression model coefficients or parameters. That is, after finding the optimum parameters, a feature X with the weight Theta1 close to zero has a smaller effect on the prediction than features with large absolute values of Theta1. Indeed, it allows us to understand the impact an independent variable has on the dependent variable while controlling other independent variables. 
