@@ -180,14 +180,14 @@ Kernelling in SVM is the transforming/mapping of data into higher dimensional sp
 
 Each of these functions has its own characteristics, its pros and cons, and its own equation, and can be implemented in libraries of different DS languages. 
 
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c737671c-08df-4041-a17b-b8a15445db70.png" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c737671c-08df-4041-a17b-b8a15445db70.png" width="400" />
 
 There's no easy way of knowing which function performs best with any given dataset. Choose different functions in turn and compare the results. 
 
 ### How do we find the right or optimized hyperplane separator after transformation? 
 SVMs are based on the idea of finding a hyperplane that best divides a data set into two classes. One reasonable choice as the best hyperplane is the one that represents the largest separation or margin between the two classes. So the goal is to choose a hyperplane with as big a margin as possible. Examples closest to the hyperplane are support vectors. It is intuitive that only support vectors matter for achieving our goal. And thus, other trending examples can be ignored. We tried to find the hyperplane in such a way that it has the maximum distance to support vectors. Please note that the hyperplane and boundary decision lines have their own equations. 
 
-<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e698f108-dd7c-4452-aa69-cb2a8272b11d.png" width="300" />
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e698f108-dd7c-4452-aa69-cb2a8272b11d.png" width="400" />
 
 The hyperplane is learned from training data using an optimization procedure that maximizes the margin. The outputs of the algorithm are the values w and b for the line. You can make classifications using this estimated line. It is enough to plug in input values into the line equation. Then, you can calculate whether an unknown point is above or below the line. 
 * If the equation returns a value greater than 0, then the point belongs to the first class which is above the line
