@@ -75,8 +75,6 @@ This module explores the example of Weather Station Clustering using DBSCAN & sc
 
 <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c77b613c-31e5-4959-8534-1b94bcbae66d.png" width="500" />
 
-https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c77b613c-31e5-4959-8534-1b94bcbae66d
-
 ## Use Cases
 ### Customer Segmentation
 One of the most popular use cases for clustering is in customer segmentation, particularly within the retail sector. It allows for historical data to be used, and for customers to be grouped into clusters based on similar characteristics, e.g. age, education, and so on. This can then allow businesses to target specific groups of customers, so as to more effectively allocate marketing resources. For example, one group might contain customers who are high profit and low risk. That is, more likely to purchase products or subscribe for a service. Knowing this information allows a business to devote more time and attention to retaining these customers. Another group might include customers from nonprofit organizations and so on.
