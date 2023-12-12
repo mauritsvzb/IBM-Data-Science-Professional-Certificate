@@ -56,13 +56,15 @@ Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is on of th
 
 The DBSCAN algorithm considers 2 variables:
 
-R (Radius of neighbourhood), determines a specified radius that if it includes enough points within it, we call it a dense area
-M (Minimum number of neighbours), determines the minimum number of data points we want in a neighbourhood to define a cluster
+1. R (Radius of neighbourhood), determines a specified radius that if it includes enough points within it, we call it a dense area
+2. M (Minimum number of neighbours), determines the minimum number of data points we want in a neighbourhood to define a cluster
+
 From these, we can define what each data point is, using the following definitions:
 
-Core Point, a data point is a core point if within our neighbourhood of the point there are at least M points. For example, as there are 6 points in the 2cm neighbor of the red point, this is marked as a core point
-Border Point, a data point is a border point if A; its neighbourhood contains less than M data points or B; it is reachable from some core point. Here, reachability means it is within our distance from a core point. It means that even though the yellow point is within the two centimeter neighborhood of the red point, it is not by itself a core point because it does not have at least 6 points in its neighborhood.
-Outlier, a point that is not a core point and also is not close enough to be reachable from a core point.
+* Core Point, a data point is a core point if within our neighbourhood of the point there are at least M points. For example, as there are 6 points in the 2cm neighbor of the red point, this is marked as a core point
+* Border Point, a data point is a border point if A; its neighbourhood contains less than M data points or B; it is reachable from some core point. Here, reachability means it is within our distance from a core point. It means that even though the yellow point is within the two centimeter neighborhood of the red point, it is not by itself a core point because it does not have at least 6 points in its neighborhood.
+* Outlier, a point that is not a core point and also is not close enough to be reachable from a core point.
+
 The algorithm visits all the points in the dataset and labels them as either core, border, or outlier. The next step is to connect core points that are neighbors and put them in the same cluster. So, a cluster is formed as at least one core point plus all reachable core points plus all their borders. It's simply shapes all the clusters and finds outliers as well.
 
 For example, for R=2, M=6, the following clusters are created:
