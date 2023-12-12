@@ -193,15 +193,14 @@ The hyperplane is learned from training data using an optimization procedure tha
 * If the equation returns a value greater than 0, then the point belongs to the first class which is above the line
 * If the equation returns a value smaller than 0, then the point belongs to the second class which is below the line
 
-### Pros and Cons of SVM
-* Pros
- * Accurate in high-dimensional spaces
- * Memory efficient
+### Advantages of SVM
+* Accurate in high-dimensional spaces
+* Memory efficient
 
-* Cons
- * Prone to overfitting
- * No probability estimation
- * Small data sets
+### Disadvantages of SVM
+* Prone to overfitting
+* No probability estimation
+* Small data sets
 
 ### SVM applications
 * Image classification
