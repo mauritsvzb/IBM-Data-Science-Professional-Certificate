@@ -159,3 +159,54 @@ Notice that in all these examples not only do we predict the class of each case,
 
 * If you need to understand the impact of a feature
   * You can select the best features based on the statistical significance of the logistic regression model coefficients or parameters. That is, after finding the optimum parameters, a feature X with the weight Theta1 close to zero has a smaller effect on the prediction than features with large absolute values of Theta1. Indeed, it allows us to understand the impact an independent variable has on the dependent variable while controlling other independent variables. 
+
+## Suppport Vector Machines (SVM)
+A Support Vector Machine is a supervised algorithm that classifies cases by finding a separator. 
+1. Map data to a high dimensional feature space 
+2. Estimate a Non-Linear Separator (drawn as hyperplane)
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a5c527ce-06d6-4348-86dd-aadb59755c9e.png" width="300" /> <img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/d3333205-fa94-46fc-b502-e42b33d58aa5.png" width="300" />
+
+Two challenging questions to consider: 
+1. How do we transfer data in such a way that a separator could be drawn as a hyperplane? 
+2. How can we find the best or optimized hyperplane separator after transformation? 
+
+### Data transformation
+Kernelling in SVM is the transforming/mapping of data into higher dimensional space, in such a way that can change a linearly inseparable data set into a linearly separable data set. The mathematical function used for the transformation is known as the kernel function, and can be of different types:
+* Linear
+* Polynomial
+* Radial Basis Function (RBF)
+* Sigmoid
+
+Each of these functions has its own characteristics, its pros and cons, and its own equation, and can be implemented in libraries of different DS languages. 
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/c737671c-08df-4041-a17b-b8a15445db70.png" width="300" />
+
+There's no easy way of knowing which function performs best with any given dataset. Choose different functions in turn and compare the results. 
+
+### How do we find the right or optimized hyperplane separator after transformation? 
+SVMs are based on the idea of finding a hyperplane that best divides a data set into two classes. One reasonable choice as the best hyperplane is the one that represents the largest separation or margin between the two classes. So the goal is to choose a hyperplane with as big a margin as possible. Examples closest to the hyperplane are support vectors. It is intuitive that only support vectors matter for achieving our goal. And thus, other trending examples can be ignored. We tried to find the hyperplane in such a way that it has the maximum distance to support vectors. Please note that the hyperplane and boundary decision lines have their own equations. 
+
+<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/e698f108-dd7c-4452-aa69-cb2a8272b11d.png" width="300" />
+
+The hyperplane is learned from training data using an optimization procedure that maximizes the margin. The outputs of the algorithm are the values w and b for the line. You can make classifications using this estimated line. It is enough to plug in input values into the line equation. Then, you can calculate whether an unknown point is above or below the line. 
+* If the equation returns a value greater than 0, then the point belongs to the first class which is above the line
+* If the equation returns a value smaller than 0, then the point belongs to the second class which is below the line
+
+### Pros and Cons of SVM
+* Pros
+ * Accurate in high-dimensional spaces
+ * Memory efficient
+
+* Cons
+ * Prone to overfitting
+ * No probability estimation
+ * Small data sets
+
+### SVM applications
+* Image classification
+* Text category assignment 
+* Detecting spam
+* Sentiment analysis
+* Gene expression classification
+* Regression, outlier detection, and clustering
