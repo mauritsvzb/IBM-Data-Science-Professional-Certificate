@@ -40,4 +40,5 @@ The final project within this course is the building of a classifier to predict 
 ## 🏆 Certificates
 To verify the certificates, click the images to follow the links:
 
+[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/ba1a7174-05f2-487f-8915-6873d79b4f30.png" width="550">](https://www.coursera.org/account/accomplishments/verify/58AJBY3VPLB8) [<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/482f7d7b-3c39-4f26-b20f-744ea72209e2.png" width="430">](https://www.credly.com/badges/1716fb50-f0c9-4c3d-ad7d-4b6123158afd/public_url)
 
