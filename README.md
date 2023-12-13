@@ -16,7 +16,7 @@ This repository contains documentation and resources used to complete the certif
 * ✅ [06. Databases and SQL for Data Science with Python](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/06.%20Databases%20and%20SQL%20for%20Data%20Science%20with%20Python)
 * ✅ [07. Data Analysis with Python](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/07.%20Data%20Analysis%20With%20Python)
 * ✅ [08. Data Visualization with Python](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/08.%20Data%20Visualization%20with%20Python)
-*  09. Machine Learning with Python
+* ✅ [09. Machine Learning with Python](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/09.%20Machine%20Learning%20with%20Python)
 *  10. Applied Data Science Capstone
 
 # 🛠️ Tools
