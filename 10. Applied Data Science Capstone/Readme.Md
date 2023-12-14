@@ -16,8 +16,8 @@ The full report can be found here.
 This project follows these steps:
 
 1. [Data Collection](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/10.%20Applied%20Data%20Science%20Capstone/1.%20Data%20Collection)
-  * Making GET requests to the SpaceX REST API
-  * Web Scraping
+   * Making GET requests to the SpaceX REST API
+   * Web Scraping
 2. [Data Wrangling](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/tree/main/10.%20Applied%20Data%20Science%20Capstone/2.%20Data%20Wrangling)
   * Using the `.fillna()` method to remove NaN values
   * Using the `.value_counts()` method to determine the following:
