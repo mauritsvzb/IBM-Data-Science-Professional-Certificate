@@ -53,4 +53,4 @@ This project follows these steps:
 ## 🏆 Certificates
 To verify the certificates, click the images to follow the links:
 
-[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a75d883f-7f41-4b27-ba34-8d85ebe028ca.png" width="550">](https://coursera.org/share/1c59367a176b10961e2688d8c87f99c5) [<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/98651d89-3bfc-43bd-95ee-689dfaa222bd.png" width="430">](https://www.credly.com/badges/ed60da25-5372-4e4a-81ad-afe94ac1374b/public_url)
+[<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/a75d883f-7f41-4b27-ba34-8d85ebe028ca.png" width="550">](https://www.coursera.org/account/accomplishments/verify/FXYCBCHZUVKB) [<img src="https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/assets/13508894/98651d89-3bfc-43bd-95ee-689dfaa222bd.png" width="430">](https://www.credly.com/badges/ed60da25-5372-4e4a-81ad-afe94ac1374b/public_url)
