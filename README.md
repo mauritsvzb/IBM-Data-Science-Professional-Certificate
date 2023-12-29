@@ -51,7 +51,7 @@ The following Python libraries were used throughout the certification:
 * [Recession Impacts on Automobile Sales](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/08.%20Data%20Visualization%20with%20Python/Analyzing%20the%20Impact%20of%20Recession%20on%20Automobile%20Sales%20(Part%201)%20-%20Create%20visualizations%20using%20Matplotib%2C%20Seaborn%20and%20Folium.ipynb)
 * [Recession Impacts on Automobile Sales Dashboard](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/08.%20Data%20Visualization%20with%20Python/Analyzing%20the%20Impact%20of%20Recession%20on%20Automobile%20Sales%20(Part%202)%20-%20Create%20Dashboard%20using%20Plotly%20and%20Dash.Rmd)
 * [Predicting rainfall in AUS: A classification problem](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/09.%20Machine%20Learning%20with%20Python/Final%20Project/Machine%20Learning%20with%20Python%20-%20The%20Best%20Classifier.ipynb)
-* [Predicting Successful Rocket Landings]()
+* [Predicting Successful Rocket Landings](https://github.com/mauritsvzb/IBM-Data-Science-Professional-Certificate/blob/main/10.%20Applied%20Data%20Science%20Capstone/Maurits%20capstone%20project.pdf)
 
 # 🏆 Certificates
 To verify the certificates, click the images to follow the links:
